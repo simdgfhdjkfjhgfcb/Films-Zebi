@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="style.css" />
+			<title>CineFlix</title>
+			
+			<link rel="shortcut icon" href="./assets/images/icon.png" type="image/png">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <link rel="stylesheet" href="./assets/css/style.css">
+	    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+		</head>
+		
+		<body>
+		  
+		   <!--
+    - main container
+  -->
+  <div class="container">
+
+    <!--
+      - #HEADER SECTION
+    -->
+
+    <header class="">
+      <div class="navbar">
+
+        <!--
+          - menu button for small screen
+        -->
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+
+        <a href="index.html" class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="">
+        </a>
+
+        <!--
+          - navbar navigation
+        -->
+
+        <nav class="">
+          <ul class="navbar-nav">
+
+            <li> <a href="#" class="navbar-link">Home</a> </li>
+            <li> <a href="#category" class="navbar-link">Category</a> </li>
+            <li> <a href="#live" class="navbar-link  indicator">LIVE</a> </li>
+
+          </ul>
+        </nav>
+
+        <!--
+          - search and sign-in
+        -->
+
+        <div class="navbar-actions">
+
+          <form action="#" class="navbar-form">
+            <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+            <button class="navbar-form-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="navbar-form-close">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </form>
+
+
+          <!--
+            - search button for small screen
+          -->
+
+          <button class="navbar-search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a href="#" class="navbar-signin">
+            <span>Sign in</span>
+            <ion-icon name="log-in-outline"></ion-icon>
+          </a>
+
+        </div>
+
+      </div>
+    </header>
+			  
+			  <h1 id="Peaky_Blinders">Peaky Blinders</h1>
+			  <button id="PRECEDENT" class="Lien_EP"><span class="icône-flèche-cercle-gauche"></span>PRECEDENT</button>
+        <button id="SUIVANT" class="Lien_EP">SUIVANT<span class="icône-flèche-cercle-droite"></span></button>
+			  <a class="Lien_EP" href="boruto_EP_225.html"><h4 class="dernier episode" id="D_episode"><span class="icon-arrow-circle-down"></span>DERNIER EPISODE</h4></a>
+			  
+
+<center><div id="videoContainer">
+  <iframe id="video_EP" width="790" height="540" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" allowScriptAccess="always" mozallowfullscreen="true" allow="encrypted-media"></iframe>
+</div></center>
+
+<script>
+$(document).ready(function(){
+  var episodes = [
+    {
+      lecteur: '1',
+      videos: [
+    'https://www.myvi.top/embed/cibzp4ismsuwudiuygma57u87w',
+    'https://www.myvi.top/embed/y358bm99jozwzy99wn19fnjt6a',
+    'https://www.myvi.top/embed/1p3g76wc99trzedf81scm6coqy',
+    'https://www.myvi.top/embed/hbj97efnwriw8fp1fgiw4mix5h',
+    'https://www.myvi.top/embed/mes8a5jg5myrxybn4493e88rih',
+    'https://www.myvi.top/embed/5c53nmerrt1w9xynienjk9mioo',
+    'https://www.myvi.top/embed/yx9n6n9ugbuwfkmgd99oph3une',
+    'https://www.myvi.top/embed/ttuaofcg1cfwzn7po4yw6riayr',
+    'https://www.myvi.top/embed/y8j7erfdfpwwdqw1d43bf4syqw',
+    'https://www.myvi.top/embed/wnx5rost7akwipmythdu7t7koo',
+    'https://www.myvi.top/embed/pmxxm13wfz8rmcij333akk37wr',
+    'https://www.myvi.top/embed/5748grud54srpk5htutmiu9n3r',
+    'https://www.myvi.top/embed/o67of6rqaf6wi8su9wqdic56th',
+    'https://www.myvi.top/embed/qkfbxc9nh76wfc13sp6z9atmhc',
+    'https://www.myvi.top/embed/8auo4oe9i36rz87c1ohurz9ofw',
+    'https://www.myvi.top/embed/7gnjwop393dr8figk8h7g79zfc',
+    'https://www.myvi.top/embed/mtyt1q9dczsruc8xzn4fwq39bc',
+    'https://www.myvi.top/embed/zjofm5amw3frx8oaggw4w8iqhh',
+    'https://www.myvi.top/embed/exanzxt8a5mrdqptrx1f7xdyfy',
+    'https://www.myvi.top/embed/ppaf8n63979w8em8y4mbuhcqzw',
+    'https://www.myvi.top/embed/x5cnheioftyr5yddmrj5yqsmtr',
+    'https://www.myvi.top/embed/hgxcad54ofkrmrnbkhawkxu1we',
+    'https://www.myvi.top/embed/wqc6d47wi4hr7niq48d3jhhige',
+    'https://www.myvi.top/embed/fr6agrroa65wbqde71h7xy1aaw',
+    'https://www.myvi.top/embed/3htorw3bsezrdgo3k741ue13ho',
+    'https://www.myvi.top/embed/yhm8bw8mc3dwz8rufiecfbd78y',
+    'https://www.myvi.top/embed/tnd7ooopjawwxfgg3pz6nk39gy',
+    'https://www.myvi.top/embed/jebxcu33gczwdp9nrc6tbtujyh',
+    'https://www.myvi.top/embed/ayq14ic5crdwdqd8ncnxe5ksch',
+    'https://www.myvi.top/embed/9nkh9ukbobmrjf41s8pyt99x7c',
+    'https://www.myvi.top/embed/cqodezmhwtnrbjm1txws4m8g5r',
+    'https://www.myvi.top/embed/i1a9476cghgwtbixckopydeb7w',
+    'https://www.myvi.top/embed/wu15eppnhqpr5enixxxpfcijro',
+    'https://www.myvi.top/embed/8bhcfrgmwt5rmknm5mfdgm6a3e',
+    'https://www.myvi.top/embed/ch8zbqpnqjzrbesbqg36rgaq9r',
+    'https://www.myvi.top/embed/cjm7q6ut8mtw8ftwbfi8yuitao',
+    'https://www.myvi.top/embed/xtj5bm3pnxuw9cq73gw4cbuz4o',
+    'https://www.myvi.top/embed/dgp4niut6hdwfbo9dawtd1tnfh',
+    'https://www.myvi.top/embed/yp9ah9pcnu4r5e8cerutfxub4o',
+    'https://www.myvi.top/embed/spbfknhzk8iw7rzniem4yjycih',
+    'https://www.myvi.top/embed/75td7edju3nwmmuz87kupyxbte',
+    'https://www.myvi.top/embed/c5fffzizgjsw9k5p5gatobom5e',
+    'https://www.myvi.top/embed/dh4jjihfeb4wjbsjh59p1pgxca',
+    'https://www.myvi.top/embed/tioyy8mn87mr9n6oi98oifpk4y',
+    'https://www.myvi.top/embed/nw7oq1ko5rur58gbdzhs9zaghc',
+    'https://www.myvi.top/embed/xngr6k8yhfnr8c9z5ai8teqdky',
+    'https://www.myvi.top/embed/wtr6ugd7o6triq5s7bxf4gojxw',
+    'https://www.myvi.top/embed/tdkfwpryz7prtksozgtpzodfyw',
+    'https://www.myvi.top/embed/116umyru6crrfepsjhgoit988c',
+    'https://www.myvi.top/embed/bjgfdr13yijripnb5u3amofsko',
+    'https://www.myvi.top/embed/4bkrrmcjwjbwu85sfqpyn4t1ny',
+    'https://www.myvi.top/embed/86h91zz5zkwwtnqqadj8h53zba',
+    'https://www.myvi.top/embed/9179zc4g3y3r5dfegwkjxsim8h',
+    'https://www.myvi.top/embed/re6uks15qzjwmmu8ibfkrmfc9c',
+    'https://www.myvi.top/embed/1okoy1jr7zhwtcxyqjfqeoyr4o',
+    'https://www.myvi.top/embed/46ndbcy34fir8rnb8qpiopgzfa',
+    'https://video.sibnet.ru/shell.php?videoid=2946186',
+    'https://video.sibnet.ru/shell.php?videoid=2946187',
+    'https://www.myvi.top/embed/zfwpsqi6t19wmn6qh3ogp5zjmr',
+    'https://www.myvi.top/embed/wx4uby8si31w7kqs8pgf9ums7c',
+    'https://www.myvi.top/embed/h7jyhrp7k9artrsx9rxqft16ya',
+    'https://www.myvi.top/embed/qyo6xim9oagwiqacdrmgxz5jrw',
+    'https://www.myvi.top/embed/14r5u6s5ut4w3barc7y3o9s1wo',
+    'https://video.sibnet.ru/shell.php?videoid=2946189',
+    'https://video.sibnet.ru/shell.php?videoid=2946190',
+    'https://www.myvi.top/embed/ndm95rf8o14wjm3k99z85e45ja',
+    'https://www.myvi.top/embed/owftum34cc8wf84ifzh4s1q71e',
+    'https://video.sibnet.ru/shell.php?videoid=2946191',
+    'https://video.sibnet.ru/shell.php?videoid=2946192',
+    'https://www.myvi.top/embed/unhyfsa3ixordesmx5b7ok865o',
+    'https://www.myvi.top/embed/mirkhybj7idrtf5jnsogauwmth',
+    'https://www.myvi.top/embed/9sjod51o7xgw8mocogxungguoo',
+    'https://www.myvi.top/embed/kza1f55pw6zrie46oehc6cpwse',
+    'https://www.myvi.top/embed/8zofpikg9ihrfp91kpkkjjjd5y',
+    'https://www.myvi.top/embed/aegb6mdd7yhr9yjzbufsi8esey',
+    'https://video.sibnet.ru/shell.php?videoid=2946194',
+    'https://video.sibnet.ru/shell.php?videoid=2946195',
+    'https://video.sibnet.ru/shell.php?videoid=2946196',
+    'https://video.sibnet.ru/shell.php?videoid=2946197',
+    'https://www.myvi.top/embed/zwwgnix474yr3jbpun4b6izgcw',
+    'https://www.myvi.top/embed/741kegttzirr5pi59ag31irhbw',
+    'https://www.myvi.top/embed/ad1zjkj1bw8wxpiirf5xkbngua',
+    'https://www.myvi.top/embed/49yr5y7bwg8w98n139hhpop59a',
+    'https://www.myvi.top/embed/5imwennfmmzrikd4wc7k4jyzfr',
+    'https://video.sibnet.ru/shell.php?videoid=2945334',
+    'https://video.sibnet.ru/shell.php?videoid=2946199',
+    'https://video.sibnet.ru/shell.php?videoid=2946200',
+    'https://www.myvi.top/embed/pu6qrbyarpewbd3j1huagijwsh',
+    'https://www.myvi.top/embed/z67sfkfmdq8rud7u7cezpnd7yr',
+    'https://www.myvi.top/embed/ig5cs513e5xwpbxrucq9ebgfxy',
+    'https://www.myvi.top/embed/yqg1zjirfo3ribekxf3zzt6zxo',
+    'https://www.myvi.top/embed/wfopmggzkaawzb3q4faeqynyto',
+    'https://www.myvi.top/embed/qsfa68d9tnzw5ys9xya3xeihpc',
+    'https://www.myvi.top/embed/tdu131b186dw7rpgh93cm7kyte',
+    'https://www.myvi.top/embed/533yk6nig43rzbd7cz1rjfk81e',
+    'https://www.myvi.top/embed/tntakcusnaawjdrmymjn9ehcde',
+    'https://www.myvi.top/embed/4s7s4g6p3eyw5pemsc9e78gj9o',
+    'https://www.myvi.top/embed/fimurfib6jkwppu53xfx68p9fr',
+    'https://www.myvi.top/embed/6uidg8azo69wtk5hud9bipi9qa',
+    'https://www.myvi.top/embed/njnhubmsnwhrzd5ufrfqcjptph',
+    'https://video.sibnet.ru/shell.php?videoid=3343543',//101
+    'https://video.sibnet.ru/shell.php?videoid=2946202',
+    'https://video.sibnet.ru/shell.php?videoid=2946448',
+    'https://video.sibnet.ru/shell.php?videoid=2946450',
+    'https://www.myvi.top/embed/opxghcwosigr3nrsadtr6ya1za',//105
+    'https://www.myvi.top/embed/fz4tdnxfmwww5f9i5o3fwd5rfo',
+    'https://www.myvi.top/embed/ie6tzmd66r6wxnp73rqyw4d4ze',
+    'https://www.myvi.top/embed/94e41mo363irjei76tzro6x1ww',
+    'https://www.myvi.top/embed/f7gbuft88i8r78ht1dstx71bhw',
+    'https://www.myvi.top/embed/pakdnmxeozhwzxc3duh57zzq4y',
+    'https://www.myvi.top/embed/wri6tqdf1xewucnc569kod93eh',
+    'https://www.myvi.top/embed/wdi4i1yxfd6rppe4jgno3d7bxr',
+    'https://www.myvi.top/embed/rh5sey355uurjm9f9ictk4pu5o',
+    'https://www.myvi.top/embed/kjdzn7jzyziw7yoous5u49or5y',
+    'https://www.myvi.top/embed/b91axcz9rwxw7nbjm8psmzkfic',
+    'https://www.myvi.top/embed/gu1faukrofhwpjikanwsdtpnxc',
+    'https://www.myvi.top/embed/n6bisikcoq5r3rzn9whpggtudy',
+    'https://www.myvi.top/embed/twzqcphmo9kwipqbbwmfi55rke',
+    'https://video.sibnet.ru/shell.php?videoid=3343547',
+    'https://video.sibnet.ru/shell.php?videoid=2946480',
+    'https://www.myvi.top/embed/8z779zzob7xrfcpeay8xaer8kw',
+    'https://www.myvi.top/embed/idms1xhwdrhrjr5j1srrqs5sgh',
+    'https://www.myvi.top/embed/kbewdakppe6rikgjxbppr6xr7h',
+    'https://www.myvi.top/embed/tn46obstkwfwxbxyg5r8b5ncme',
+    'https://www.myvi.top/embed/w4ckjx7kfa4rdbeg55t6f9uyuh',
+    'https://www.myvi.top/embed/4p1k9zxan6ar7jz9a3j67txo6h',//126
+    'https://video.sibnet.ru/shell.php?videoid=2946497',
+    'https://video.sibnet.ru/shell.php?videoid=2946500',
+    'https://video.sibnet.ru/shell.php?videoid=2946567',
+    'https://video.sibnet.ru/shell.php?videoid=2946568',
+    'https://www.myvi.top/embed/y4skii8u3hdwin1y7ikojycpph',//131
+    'https://www.myvi.top/embed/atmogq7oua3w5nohaerekyyapr',
+    'https://www.myvi.top/embed/pgagjkzkkowrig8piyyde7nuwy',
+    'https://www.myvi.top/embed/t4iwsrwht36w9kwrih5fzfjarr',//134
+    'https://video.sibnet.ru/shell.php?videoid=4721961',
+    'https://video.sibnet.ru/shell.php?videoid=2946579',
+    'https://www.myvi.top/embed/xmi8mdpomd1wdrficcteb46zfy',//137
+    'https://www.myvi.top/embed/zn8tayw91nqr5btdso3hp4xnjh',
+    'https://www.myvi.top/embed/rn34xumhkewwmxh6jppzm7hzir',
+    'https://www.myvi.top/embed/uj4fyzpaoicrimo4yixjgooj7y',
+    'https://www.myvi.top/embed/nb9cnkuew8grddem3mik948wea',
+    'https://www.myvi.top/embed/gka6in5ezojrbqybr4or97t4zc',
+    'https://www.myvi.top/embed/i1aa3eqdg3swmd4161grts5kba',
+    'https://www.myvi.top/embed/s8wa1ejd51cw8nigu6huyuj63a',
+    'https://www.myvi.top/embed/mdigq44e7wswdembx7w5whq3da',
+    'https://www.myvi.top/embed/q4d1jxmcx8ww8jtbu4143n94wh',
+    'https://www.myvi.top/embed/rswmic1smdortd95tgatjhqm6o',
+    'https://www.myvi.top/embed/ceazkcqoarxw9xny6j4gay5k9e',
+    'https://www.myvi.top/embed/engoiut3gbpr7jerc8s8aziyne',
+    'https://www.myvi.top/embed/wtxsxk33kyowxfudugj14a4x6o',
+    'https://www.myvi.top/embed/ijdwuihtf7xr5nqra3c3n838my',//151
+    'https://video.sibnet.ru/shell.php?videoid=3343550',
+    'https://video.sibnet.ru/shell.php?videoid=2946600',
+    'https://video.sibnet.ru/shell.php?videoid=2949385',
+    'https://video.sibnet.ru/shell.php?videoid=2949381',
+    'https://www.myvi.top/embed/gjriju5i5mjwtccx1s1td6f9ar',//156
+    'https://www.myvi.top/embed/8hjanjp7xhawxr5kjztjz7mbjw',
+    'https://www.myvi.top/embed/onq5bk9eukowdrj6zd3tqru9or',
+    'https://www.myvi.top/embed/5mmhf6pop9cw7nhkgfxmce1x5y',
+    'https://www.myvi.top/embed/o57g5htkyd1r9cuhswpdzpr7yr',
+    'https://www.myvi.top/embed/j9xap8edmzgrb84zg1zkbwbb9y',
+    'https://www.myvi.top/embed/adsuzgppq4cw3xt8psu73dc4wa',
+    'https://www.myvi.top/embed/xryix95iafmrzg1shd7h34jzeo',
+    'https://www.myvi.top/embed/euz6d68u4zkru8poyebfzm6jmh',
+    'https://www.myvi.top/embed/hzznf4edprgrmmupz64pgojy5h',
+    'https://www.myvi.top/embed/j3w49gmr6ahwdycmj8ch161jmo',
+    'https://www.myvi.top/embed/dgogffftzowr5cctjxaptbfa9y',
+    'https://www.myvi.top/embed/jey1omqwocqrjghd464dio8wcc',
+    'https://www.myvi.top/embed/jzosd8kmg4crpbbqsi5abxr1ch',//169
+    'https://video.sibnet.ru/shell.php?videoid=2952717',
+    'https://video.sibnet.ru/shell.php?videoid=2952718',
+    'https://www.myvi.top/embed/swgyamh6wbbw3866ctgrodfh5w',//172
+    'https://www.myvi.top/embed/brtyukkxzkbwjnx5rumnnsqrbo',
+    'https://www.myvi.top/embed/d8wux69n4taw7xikduiiya9f4c',
+    'https://www.myvi.top/embed/f18rjj1qht7wjri3aezgddytsw',
+    'https://www.myvi.top/embed/35gi31odgkrr3jixx48q8j8s7o',
+    'https://www.myvi.top/embed/6tg1nyma3j6r7nk4jjxi694tuw',
+    'https://www.myvi.top/embed/udgcfpr67wuwpgw648wyke6r7c',
+    'https://www.myvi.top/embed/4bnb9r73pizr3bu6m3uzthsczr',
+    'https://www.myvi.top/embed/1pmzzsqghqswjej91bzc1a4guy',
+    'https://www.myvi.top/embed/mbk4pyatukhw5rdiyxdi3ykwzy',
+    'https://www.myvi.top/embed/pz458xu8yshwigd61dd7ckbage',
+    'https://www.myvi.top/embed/gniqr4sm3pbwbpba76bec9oeya',
+    'https://www.myvi.top/embed/6pxq5mcke68wdcsafyor7umspo',
+    'https://www.myvi.top/embed/kd9dx9bawbfr5kdj6jxx9o6emy',
+    'https://www.myvi.top/embed/roadajxca9grtqrno69hjaqugr',//186
+    'https://video.sibnet.ru/shell.php?videoid=3343562',
+    'https://video.sibnet.ru/shell.php?videoid=2952764',
+    'https://www.myvi.top/embed/d6339qesq7awzj341xc1is5wqo',//189
+    'https://www.myvi.top/embed/xajgjd8ghzyw3qo58c4xxgxkja',
+    'https://www.myvi.top/embed/w1gdi11fb4nwicxxa676crebfr',
+    'https://www.myvi.top/embed/bpue5rzqkf4ruyf3w7h98u68pc',
+    'https://www.myvi.top/embed/jxr1xfqkepqr8r7h18c95f5eyc',
+    'https://www.myvi.top/embed/obquruarcysrzc3zqc3ptammny',
+    'https://www.myvi.top/embed/bef9eikz41jw38no8pg8gcorna',
+    'https://www.myvi.top/embed/8p3x4p6xmwgruyui1a6gr88i1e',//196
+    'https://video.sibnet.ru/shell.php?videoid=2952774',
+    'https://video.sibnet.ru/shell.php?videoid=2952775',
+    'https://www.myvi.top/embed/afjyf43fputwd899h9gc9u6gcc',//199
+    'https://www.myvi.top/embed/rywpbj7kqftwtx4boc4xiyo6fw',
+    'https://www.myvi.top/embed/q1rm9hpfptsrjkdf7js1fofy5c',
+    'https://www.myvi.top/embed/9okpjq33j6dwzc1tfit51dtwuh',
+    'https://www.myvi.top/embed/c6co8frtgcqw7gxof6xjax9r1h',
+    'https://www.myvi.top/embed/h4hbkkd773owmk54qomc8nxime',
+    'https://www.myvi.top/embed/yk51gm7y63mwxbsi951mfc1i3e',
+    'https://www.myvi.top/embed/b1ywbd8y9smwdqrt984sprqzke',
+    'https://www.myvi.top/embed/imsijegpy4er5ct6s6963zuqac',
+    'https://www.myvi.top/embed/wqbnncwqum9rdpb7q77tkafh1a',
+    'https://www.myvi.top/embed/r9t9ots7tkurun9oxge5nepwec',
+    'https://www.myvi.top/embed/ccdp8g53akjwdeehoafkrikoxw',
+    'https://www.myvi.top/embed/jqw7tus6h4dw3noeb1cx7rbd5c',
+    'https://www.myvi.top/embed/re44yd8gpeir9dnguud4zgozjh',
+    'https://www.myvi.top/embed/3dm1bodsioarmetttj81b31fsa',
+    'https://www.myvi.top/embed/3n7ajpk5m4arir4jq8pbfbh53a',
+    'https://www.myvi.top/embed/cpqggxetagswjftw3nm4tegsxw',
+    'https://www.myvi.top/embed/wpxqib4rzanwbnbjdtwqgmiw4e',
+    'https://www.myvi.top/embed/t3mzqzni9rur7x5gf8n4k8h57y',
+    'https://www.myvi.top/embed/m65tzeginf9wimu81ij7rxshra',
+    'https://www.myvi.top/embed/uxo9wnmykqwwpfrig3d3x117zh',
+    'https://www.myvi.top/embed/9wc95k1harbwufoc71otnfdu9y',
+    'https://www.myvi.top/embed/5gutgyqbcfmrbnx1gdyrksxdwa',
+    'https://www.myvi.top/embed/5r67wzge6b8wf85md7typa5zoh',
+    'https://www.myvi.top/embed/9bnon8t7jn5w7fp53iuatupnga',
+    'https://www.myvi.top/embed/8yufxk11y9xr8kfwnzkaekk63h',
+    'https://www.myvi.top/embed/nko613bcwgtw9foskxa8p1bfhh',
+    'https://www.myvi.top/embed/qhqu93hsny9rixrk6uoiddkzmy',
+    'https://www.myvi.top/embed/6r48z94x97dw3br3y33kygpmna',
+    'https://www.myvi.top/embed/nygoi3buxb7rdeoofdbj7szjuc',
+    'https://www.myvi.top/embed/9cwhx6ew91mrjeh1xda4ubfoph',
+    'https://www.myvi.top/embed/npugpbz3sirrxp48s3pweeoarr',
+    'https://www.myvi.top/embed/4sb579qzxpjw5f1ko7bffjryey',
+    'https://www.myvi.top/embed/8e5j1r9aribwicq94ib4utoi6a',
+    'https://www.myvi.top/embed/qo148c6uwb4w3x1y7z5iezzp9e',
+    'https://www.myvi.top/embed/7bj6tfxwwmcr7ctugahtccishw',
+    'https://www.myvi.top/embed/dg6uajjw5pbwdectbozfgwnypa',
+    'https://www.myvi.top/embed/csjmhezszqdwbc8bggubg39uoh',
+    'https://www.myvi.top/embed/6p1ta1oyrfrr9yuc6imats3oma',
+    'https://www.myvi.top/embed/7z1e95arpfsw7ezhprzres7iyh',
+    'https://www.myvi.top/embed/s6fo88hpwnfrmcenrp6hoy1w5w',
+    'https://www.myvi.top/embed/qn86ih3g1n1r3dbm6g38jcn6fr',
+    'https://www.myvi.top/embed/aa8pyikdewrrdj7kypcky1j8zy',
+    'https://www.myvi.top/embed/g8ib7376k7dwd8hc9uj5giqjiy',
+    'https://www.myvi.top/embed/far6rxmmrf8rdpbmogsjp9ziqe',
+    'https://www.myvi.top/embed/qheyi6pfdy9rdpy3aa7d3udpty',
+    'https://www.myvi.top/embed/ngdfgowsuu6r3yqz6woabr6phy',
+    'https://www.myvi.top/embed/ujicy7urr4rw5b414fn1pgfhgw',
+    'https://www.myvi.top/embed/qprmrqtyhrwrfj7phna1fyyxae',
+    'https://www.myvi.top/embed/rrof6fo3x8wwfqsgxz4msetc4a',
+    'https://www.myvi.top/embed/pnf4njc577jw8rhdkwt5giiadc',
+    'https://www.myvi.top/embed/g8695ppsmzwrjy1udto4zyh9tc',
+    'https://www.myvi.top/embed/d3y9kd16djfwfn19ftky4hszdy',
+    'https://www.myvi.top/embed/a4nzqo51jpxwje7m5h5xjqpyoh',
+    'https://www.myvi.top/embed/igg38s4hihar3ntdaxkjppkhwe',
+    'https://www.myvi.top/embed/mygyfrjhssew8bgmt34henxw3w',
+    'https://www.myvi.top/embed/xepzjrezkeuwzcqea96jceh1me',
+    'https://www.myvi.top/embed/maop7njrw7dw3m1r9srwfiiu4w',
+    'https://www.myvi.top/embed/hbtjods6fgowieks7zhn8xt8mr',
+    'https://www.myvi.top/embed/1kf81c7w4pmwdrhicabaj8tiyw',
+    'https://www.myvi.top/embed/q7cym1oxsnzrdfrxd95y573kor',
+    'https://www.myvi.top/embed/kjdicuce8errzb4o14tbxfnjiy',
+    'https://www.myvi.top/embed/zzixeq3ce9rwjqzk4ewrnk5u6y',
+    'https://www.myvi.top/embed/derhtwjnm3erunhsn3kz3ew4jr',
+    'https://www.myvi.top/embed/k89tzs5bgs6rdnws43m7axby1o',
+    'https://www.myvi.top/embed/9b4damuark6rtn88sq4xao9sbh',
+    'https://www.myvi.top/embed/pi3xrpqjrr8rzcp8xfyao87rza',
+    'https://www.myvi.top/embed/p11odif33zgwzesxuot99s9wyr',
+    'https://www.myvi.top/embed/5ij8yrmzoc7w3pua7yqbsubimy',
+    'https://www.myvi.top/embed/8qakqid6twwrxx7wyctakrxuce',
+    'https://www.myvi.top/embed/uwsh6kgc768w9xdrsp9hekduzw',
+    'https://www.myvi.top/embed/b1n3p58g6t6r8cbx8hb61ko4nc',
+    'https://www.myvi.top/embed/7ynsh43ys35widmi9zddoycd6c',
+    'https://www.myvi.top/embed/81nr5ycyb6xwzx1un9fjt1qudh',
+    'https://www.myvi.top/embed/yesazasz9mbrzp78oohx569raa',
+    'https://www.myvi.top/embed/amezuztuz5xr8d7anm4tt6iy6w',
+    'https://www.myvi.top/embed/yqrzgxm14h4wpbykpur1dr911o',
+    'https://www.myvi.top/embed/4dfcttu6pihrxytaxmtbefbyse',
+    'https://www.myvi.top/embed/aeer699a975r3ruyh73oupuz9o',
+    'https://www.myvi.top/embed/wynw16o8bozwzeiri4az4icn3a',
+    'https://www.myvi.top/embed/nnf8nbygei4rzmnqwdzx7nefxo',
+    'https://www.myvi.top/embed/gn4nqpm44j8wjdcm6nizud9gpw',
+    'https://www.myvi.top/embed/kfhxf3ymk75rxb74gcpo3g965w',
+    'https://www.myvi.top/embed/744yubnu4hgw7eximee6j7wsde',
+    'https://www.myvi.top/embed/8rb7fok476qwty8go88x3oamfo',
+    'https://www.myvi.top/embed/qtify1ycxztw3gk3w4kkxwj7hy',
+    'https://www.myvi.top/embed/tbnjcjjmc76w3k31fxxmh67jwy',
+    'https://www.myvi.top/embed/ypjx8pqwwamw7rdk5q3h4dmtnr',
+    'https://www.myvi.top/embed/sixg35spxjcrtf3167droi8oqr',
+    'https://www.myvi.top/embed/g9zs33qrkddwtym51w5u118xjh',
+    'https://www.myvi.top/embed/3s7q9ioz5etwfr9ujwimi3bs3e',
+    'https://www.myvi.top/embed/3w79bdhg54mwzfgaaixsq5ug7y',
+    'https://www.myvi.top/embed/tuhwrd8xo84r9fjntaom63i1py',
+    'https://www.myvi.top/embed/35erng5pcforte8g5j4mxqg16c',
+    'https://www.myvi.top/embed/qmcdyaft8tjw8jb9knic5cgzpe',
+    'https://www.myvi.top/embed/w869u7b7jxdwpqb36s5zpoc1uh',
+    'https://www.myvi.top/embed/qhxtq3e595wwzjfcwd4cym965y',
+    'https://www.myvi.top/embed/fagqe19c5p5rjjwbyrs6xp5brh',
+    'https://www.myvi.top/embed/p416o8ir68bwxys68x7rmmu3gr',
+    'https://www.myvi.top/embed/61k5uty6s9nriggbwt3qbnfieh',
+    'https://www.myvi.top/embed/axt5xcx3e7sw3fdwh6ng3owqxr',
+    'https://www.myvi.top/embed/4bbar6qsgfsrdb8p9fwcbqfxdc',
+    'https://www.myvi.top/embed/fjytjw73gfgr8ep1ddi1ukse4h',
+    'https://www.myvi.top/embed/umm14incc8yr3j7ngjywqdq9ky',
+    'https://www.myvi.top/embed/73k46jrf49yrmxp96a9ycxt4oc',
+    'https://www.myvi.top/embed/g43un97u4omw7dstm3b1yq9bse',
+    'https://www.myvi.top/embed/3trqu6uexxcrdpegufrcaxn8zh',
+    'https://www.myvi.top/embed/yo1b7usca3awtjkayrfoaajpoy',
+    'https://www.myvi.top/embed/ohyfocrfdzbwzj773twzkfgf6w',
+    'https://www.myvi.top/embed/nx8h7ffyq5yrtgjo87b735qooh',
+    'https://www.myvi.top/embed/ibm6okm8q61r8es1nyrgoaouxh',
+    'https://www.myvi.top/embed/qhg4oub1p4cwuc7d9ysmhwpffh',
+    'https://www.myvi.top/embed/thoojcxr1o4rfrqarozgsndwkh',
+    'https://www.myvi.top/embed/791tp6y1bmwwfpyq6wqdeo9nor',
+    'https://www.myvi.top/embed/apts83fx7whr7r8w9wrc3g4jmo',
+    'https://www.myvi.top/embed/hoa9nqo6x8cwtqme8gsddh9uko',
+    'https://www.myvi.top/embed/od1hkuctk8iwfmm9eyir1knf3o',
+    'https://www.myvi.top/embed/seo967pf9bkrpyiksswyeq1dgh',
+    'https://www.myvi.top/embed/oo9s4yx7k1yrtyyd5pofnmanzy',
+    'https://www.myvi.top/embed/smfskb1epa4r8q7rz6984y74gr',
+    'https://www.myvi.top/embed/cs7dpc5cgz3wmjnauwb756zojw',
+    'https://www.myvi.top/embed/dhhrc3og4saw3gpu4r9m3yemge',
+    'https://www.myvi.top/embed/siaeif6oewxw3kauthmrjttoby',
+    'https://www.myvi.top/embed/3ef86r9i7mcrfmkr58mpuk4kgw',
+    'https://www.myvi.top/embed/smii8nacat4wtffpqs8sjosd1r',
+    'https://www.myvi.top/embed/exmr14xpzfwrzqymcunadgn3xr',
+    'https://www.myvi.top/embed/ok5gu7f36d5rpkj8g5pwh93ifr',
+    'https://www.myvi.top/embed/xfqq5d7z9hcrpqecwbi6fr4siy',
+    'https://www.myvi.top/embed/wyu7kosnhwcw5eoi5dd796q4ph',
+    'https://www.myvi.top/embed/kygrnkt3p1fr8g3qqthackkkhr',
+    'https://www.myvi.top/embed/jidntqbnt4hwjd4yzjpi6faruo',
+    'https://www.myvi.top/embed/iuwqoco3gezw5gk36iyyyu95bo',
+    'https://www.myvi.top/embed/hthpoyzate3rpqix4qc87nhhtr',
+    'https://www.myvi.top/embed/fzep31gbs7owxfnws9nq19f37a',
+    'https://www.myvi.top/embed/wcitobe1nsfwina9dpfmc8ecxa',
+    'https://www.myvi.top/embed/nsj4pfuc9hrwdnp6jzyiz9kqjh',
+    'https://www.myvi.top/embed/mzwz7di4iz7rif59jyg48z7oec',
+    'https://www.myvi.top/embed/wocnbz3sf97r5dshsue9oqiy1a',
+    'https://www.myvi.top/embed/6reecm3okcnwmrdpedy4p9gr3c',
+    'https://www.myvi.top/embed/a3mt3196puurxn6kqm3auhha8c',
+    'https://www.myvi.top/embed/tyy9aktb87dw5q3fce7ggqd9be',
+    'https://www.myvi.top/embed/thzxzkso4duwmnmzik9uocqg1h',
+    'https://www.myvi.top/embed/3rhkwrrwkjnr7mfy8pu6m9yimc',
+    'https://www.myvi.top/embed/cd8coqkg9qzrfymqn1i35d36my',
+    'https://www.myvi.top/embed/zd6i7jwmafzrfgaguoze3mporh',
+    'https://www.myvi.top/embed/xg7qxk9s9yewmrw3akjmgk3f1h',
+    'https://www.myvi.top/embed/ciu61af8wx5rbqq4hdq68nx5me',
+    'https://www.myvi.top/embed/mfgsradahorwfj9goeszjj1ubr',
+    'https://www.myvi.top/embed/5kwjbipdbpewf8hzkmzu5i81zc',
+    'https://www.myvi.top/embed/xiqxhmx3bibwppai5t6q46e1ae',
+    'https://www.myvi.top/embed/xuy7so6ida4wxpz37m97huzwxw',
+    'https://www.myvi.top/embed/1or8swr3466wzq1yztqmwzrdze',
+    'https://www.myvi.top/embed/jw15ar3yu4owbks8exkum7tnqe',
+    'https://www.myvi.top/embed/61tyt9c1s6uwdkkdqw4wgw9gyh',
+    'https://www.myvi.top/embed/7ubh3js3hcnw8benr49obf7bxo',
+    'https://www.myvi.top/embed/587mgsbq8pewmnjtzhb8h3c73y',
+    'https://www.myvi.top/embed/a6bzsuk1uiaw78dxnahdqchapw',
+    'https://www.myvi.top/embed/3n9g7juk4p7wmy3yoz6i769rzy',
+    'https://www.myvi.top/embed/38cgnj3t5hwwmj1xjru11wpwtc',
+    'https://www.myvi.top/embed/oz1ek7ejumbwfedo8rh95sf8gy',
+    'https://www.myvi.top/embed/13oz1j8x59jr8fsxosm3m53c8w',
+    'https://www.myvi.top/embed/hm4gpryiffqwfnak79xoky1yzw',
+    'https://www.myvi.top/embed/sr8pbe5y3d4wxn117zcpten9bo',
+    'https://www.myvi.top/embed/6qsxcdbtuoirueyhshrmcs4goy',
+    'https://www.myvi.top/embed/mo364mq6n4mwbyjmg8nqzcj8mr',
+    'https://www.myvi.top/embed/gxdphgp5dntwicjct67tkzciye',
+    'https://www.myvi.top/embed/g8shr3dudgkwuycyfsk8tg1x4h',
+    'https://www.myvi.top/embed/obmsfwbtpyfwuxc945m5nnrwjc',
+    'https://www.myvi.top/embed/nstucypdwdyr3nztetgw6jmp9a',
+    'https://www.myvi.top/embed/w9x7zns6gk6rjx9w9yoog9nngy',
+    'https://www.myvi.top/embed/nfa6kpxrtnzr5np6kuuqskakuw',
+    'https://www.myvi.top/embed/dcpc3ddmo7xr3r4is56wrji9xo',
+    'https://www.myvi.top/embed/warfymc5jjrrpduzxggj1peqow',
+    'https://www.myvi.top/embed/6gguztxbbzfrmmfbwu3ywum36o',
+    'https://www.myvi.top/embed/3hbspj3sw9hr3kuqgcznqg9bga',
+    'https://www.myvi.top/embed/dm3rrh6539uw9d53zpw93aczcr',
+    'https://www.myvi.top/embed/tkef37psuborfq4ub4c68x3zga',
+    'https://www.myvi.top/embed/hwmn5fc7x5gwjeznwhtypez7do',
+    'https://www.myvi.top/embed/yphrgc8thy4ruxybw7kuoxyadh',
+    'https://www.myvi.top/embed/dpiwno7h1wtrzegbmwq3nwm7wr',
+    'https://www.myvi.top/embed/y76y8aankxcruje3sm3hhagsae',
+    'https://www.myvi.top/embed/4mq65fhwjucw3cxhs636wox98y',
+    'https://www.myvi.top/embed/s3bwp57prnpr8fsyfwqnqwy4qo',
+    'https://www.myvi.top/embed/yrqcswcn817rtbjn6ixf6sjk3e',
+    'https://www.myvi.top/embed/awqbd7pprfyrzef4m9y8ot5t1e',
+    'https://www.myvi.top/embed/88not79oapww9ex8wejg47eorh',
+    'https://www.myvi.top/embed/nx6xd3xyr6wrunxjs96adn1h5h',
+    'https://www.myvi.top/embed/muezjbzb46erfpcmz54uofp4ur',
+    'https://www.myvi.top/embed/dnenms8ztdqwbnea6kkjfzahhc',
+    'https://www.myvi.top/embed/xwdryjx9jaow7bn3r7amqartra',
+    'https://www.myvi.top/embed/rzrnincrutawxg4177hwbwsgja',
+    'https://www.myvi.top/embed/agsrs7gp467w3ecfazh6rin3to',
+    'https://www.myvi.top/embed/8641cfy575aw58gsukn7kj91ga',
+    'https://www.myvi.top/embed/qp6h5bpo46mr5ga77qtbk6wkoc',
+    'https://www.myvi.top/embed/ambzhaimihowdx7nwaxdxxqp6h',
+    'https://www.myvi.top/embed/1ynxsybynh6wi88gict5dcpshc',
+    'https://www.myvi.top/embed/5ic1sxjicppri89fb9y5xzpsde',
+    'https://www.myvi.top/embed/c3zaps36yw9rmyeyrciqqr5poo',
+    'https://www.myvi.top/embed/dx851ehkt3ywb83rxqj9ck9a3y',
+    'https://www.myvi.top/embed/wgxp54y9bnfrmbatw4jjnddima',
+    'https://www.myvi.top/embed/sqjx3if1kh5rxfukktnoukesro',
+    'https://www.myvi.top/embed/syx3jyrzm6zrtf5459y37ihcfh',
+    'https://www.myvi.top/embed/5r8we55u7knrff7ax7fsepjcjh',
+    'https://www.myvi.top/embed/pc66dbsis5zwid9zr88xzfjsdw',
+    'https://www.myvi.top/embed/77kiozn8hyawtqwmze7fsq4y5c',
+    'https://www.myvi.top/embed/ei1wmagi99fr3mi5faxjt7jm1r',
+    'https://www.myvi.top/embed/5ayi7ozppakwdyd1993ewjsq5o',
+    'https://www.myvi.top/embed/a16sk9qj1p6rzbhp7a4z1wbdtc',
+    'https://www.myvi.top/embed/ccn1ohs1qs3wum3qypf7budu5c',
+    'https://www.myvi.top/embed/6hno3ty7f6gw3ckx7ykni95cqh',
+    'https://www.myvi.top/embed/6yubfgi17hnwdns5emd6iq5hgc',
+    'https://www.myvi.top/embed/8ikzf4umou6r8pids9aan61hrw',
+    'https://www.myvi.top/embed/cdfu8wy4f5qwzxokybghcwuj8h',
+    'https://www.myvi.top/embed/qmb4jbwrykurfntfynh79jykea',
+    'https://www.myvi.top/embed/titf1eaxpg7w7dy3fiuxcqr5oy',
+    'https://www.myvi.top/embed/6itbkt6eum7w8ewirqs8zz6hje',
+    'https://www.myvi.top/embed/a1s6ma8zt78rjfcjjafmmy9aso',
+    'https://www.myvi.top/embed/pahmyeyb5azw7gnbxwx6fjyrac',
+    'https://www.myvi.top/embed/7ob8481ypc4rxgat9518gpqi7e',
+    'https://www.myvi.top/embed/7gojkz5rdtywbeibbos6xaft6o',
+    'https://www.myvi.top/embed/k4grq6t1n84ruyj5cqsz83de6c',
+    'https://www.myvi.top/embed/bcegtakhk6pwdbr4d7gx5be8ac',
+    'https://www.myvi.top/embed/9txzf7fcu8pr5de8qt3asiqddw',
+    'https://www.myvi.top/embed/zj7ast87kouwfq8dxrzb1b18gy',
+    'https://www.myvi.top/embed/nhocfm8rur9wtkewn4z5dws4re',
+    'https://www.myvi.top/embed/yf9r3jhjf15wbb6wkx1tsfa48e',
+    'https://www.myvi.top/embed/y81tg4eg8dsw98qtfkymdsuexo',
+    'https://www.myvi.top/embed/yaydidihxnmwtfnqoasxuw713o',
+    'https://www.myvi.top/embed/e89w8aifwobrjx65trocdoz6uw',
+    'https://www.myvi.top/embed/m41qac5ieckrin5f6ya9fswpba',
+    'https://www.myvi.top/embed/9nt9edmxkd5wzbwbyndcyjm3cc',
+    'https://www.myvi.top/embed/kk4mo69ssknrtxenfnye7gwktc',
+    'https://www.myvi.top/embed/s5oua9u7j8swtdtsuoad5okh9y',
+    'https://www.myvi.top/embed/c4hnmu88odiruycofcdxwznjkh',
+    'https://www.myvi.top/embed/qw71nhby4sbw3jrfthg6ionsaa',
+    'https://www.myvi.top/embed/dk8gtx8wty3w3b5kfpbfjqqgcy',
+    'https://www.myvi.top/embed/y99d4rfd7xurfbaxrccoescswe',
+    'https://www.myvi.top/embed/it7ep9kd775wbrdzebockgqmma',
+    'https://www.myvi.top/embed/dykbtknuo9krbmk6ju14y16ocy',
+    'https://www.myvi.top/embed/gh91jc71fbmridz3tfq4q8fune',
+    'https://www.myvi.top/embed/ah5oq55s8x4wdbe8ezq87inmeh',
+    'https://www.myvi.top/embed/mk6uroegf9zriyewy334gh7buo',
+    'https://www.myvi.top/embed/61cr7b6cbq8rdbngor31ay8hge',
+    'https://www.myvi.top/embed/3nqiteqntk7rt8mitws1uf81by',
+    'https://www.myvi.top/embed/44ics5o1au6rddmhdpwjumtjwr',
+    'https://www.myvi.top/embed/ob6gtjmma17w3gnmr8oenawf4h',
+    'https://www.myvi.top/embed/9n1g6kt6mijr7qgut736tept9a',
+    'https://www.myvi.top/embed/rpi7m4mqpefwp881i3widcxutw',
+    'https://www.myvi.top/embed/41p1d43md93wtbdghpbstjoh7r',
+    'https://www.myvi.top/embed/y338eabfceawuco6n4xjd5sday',
+    'https://www.myvi.top/embed/auec1hbgb9irzxcaey6tbrzg5a',
+    'https://www.myvi.top/embed/zx3fhdswthnrxjoqdhs993ow8r',
+    'https://www.myvi.top/embed/hixqfwcoti8w5g5g6bxa8hn7eo',
+    'https://www.myvi.top/embed/tgkmoufsxpzwjyqjjdj8i8xska',
+    'https://www.myvi.top/embed/3xdksiaiur1wxcpn4i7kfktfer',
+    'https://www.myvi.top/embed/jwzdhydostzwxbenkp7gae85oc',
+    'https://www.myvi.top/embed/hhp4uxddkk3rdycu75uwq5b6yc',
+    'https://www.myvi.top/embed/hwi4bo96csbr8ydd7drj3isako',
+    'https://www.myvi.top/embed/hx9b9z6mwh8rjbftzxte8m4x8e',
+    'https://www.myvi.top/embed/9e8874iu5cwwpprpmjkzioqkne',
+    'https://www.myvi.top/embed/654fr1yp9mgrzqro6d9oofhx8w',
+    'https://www.myvi.top/embed/5fgxmuc14adw9fxagd5jf73riw',
+    'https://www.myvi.top/embed/7sy4jpfpuzrrurr65nxtbxrjth',
+    'https://www.myvi.top/embed/hwhqswcpbfnr3bsghsg8k55urh',
+    'https://www.myvi.top/embed/8cu9cg6fqigrudhkraonxrmk8o',
+    'https://www.myvi.top/embed/3dm84b153w8rxmziefjjxg39kh',
+    'https://www.myvi.top/embed/k3asftmkqb5wfbk9fpa7uyksqa',
+    'https://www.myvi.top/embed/koz7xe6889kwuc7h5mkdn57wsh',
+    'https://www.myvi.top/embed/wnytrgw1ym7r5r7ghu4gjut69r',
+    'https://www.myvi.top/embed/xtuqxqwyfshrzytopwyb68w5wa',
+    'https://www.myvi.top/embed/ryfrqmga5ifrijo9geuip4pdno',
+    'https://www.myvi.top/embed/7s6efa9md8qwbj8h89ymexpcqr',
+    'https://www.myvi.top/embed/ucb1uqfffwmwdreiimcou7dsuw',
+    'https://www.myvi.top/embed/sfwku5kp81jr78xfmrjjdjsybw',
+    'https://www.myvi.top/embed/xb7d7b13k1orupiwy5ahdpde5r',
+    'https://www.myvi.top/embed/wwgkwyrpgp4ruyk3s3g14qemhr',
+    'https://www.myvi.top/embed/r1wpf9t9ir3wtxnbxni7szaqra',
+    'https://www.myvi.top/embed/newdzockyg4w8me8zbhfq7bq9y',
+    'https://www.myvi.top/embed/mhjibnhr9r6w8boyf9ongztx4w',
+    'https://www.myvi.top/embed/k9m88tyapzowubdmjwuzs7i16r',
+    'https://www.myvi.top/embed/iduzy86gnpkwie1ak6i167d9fy',
+    'https://www.myvi.top/embed/wccpgdunqcurukb4nj9zoah6sy',
+    'https://www.myvi.top/embed/6jwtdcodisnwmcq7bq7ja3phpe',
+    'https://www.myvi.top/embed/gwx13f7fwo5wbed8y66tnwqjhh',
+    'https://www.myvi.top/embed/3f7kmt38bjxwxnrywbbdtdmj1y',
+    'https://www.myvi.top/embed/hskrjtaeeiirzeiouq7hjmof5e',
+    'https://www.myvi.top/embed/77x7fjjfo8zrfm5fxopxsiygio',
+    'https://www.myvi.top/embed/4o1tquwkk9yr8yspjpef13o1we',
+    'https://www.myvi.top/embed/nx5rcip75g4w8xpcx5i3t146ko',
+    'https://www.myvi.top/embed/ogizhpzn5rurjem7pfne597hxh',
+    'https://www.myvi.top/embed/81ahp1zightrinr6bpwu93aauc',
+    'https://www.myvi.top/embed/ymsdj9s8i7erxx1h76osw1j5ko',
+    'https://www.myvi.top/embed/epuy4jbsjm9rjbqgedmucdob6r',
+    'https://www.myvi.top/embed/yohui77wmpfwudzhfzbe3khwhc',
+    'https://www.myvi.top/embed/krtor4febjjrdmrxbdmb3rdg7e',
+    'https://www.myvi.top/embed/bcp3tscbfgzwx84geb8eg4s6rh',
+    'https://www.myvi.top/embed/ako9iyj9kyar3mnch3sssqaq7h',
+    'https://www.myvi.top/embed/isu6ixcxyrzw5jodrehuedbhao',
+    'https://www.myvi.top/embed/pnygw9wxhjmwjr1dcfnmqi15ke',
+    'https://www.myvi.top/embed/88fwkrc6zw4wmney1f1ukgyewo',
+    'https://www.myvi.top/embed/hoh8xp9718xwdrujws94kmkrho',
+    'https://www.myvi.top/embed/nrw8te9sty7wdb6wctzgjswmoa',
+    
+      ]
+    },
+    {
+      lecteur: '2',
+      videos: [
+        
+        'https://video.sibnet.ru/shell.php?videoid=2945063',
+        'https://video.sibnet.ru/shell.php?videoid=2945064',
+        'https://video.sibnet.ru/shell.php?videoid=2945065',
+        'https://video.sibnet.ru/shell.php?videoid=3343514',
+        'https://video.sibnet.ru/shell.php?videoid=2945073',
+        'https://video.sibnet.ru/shell.php?videoid=2945077',
+        'https://video.sibnet.ru/shell.php?videoid=2945082',
+        'https://video.sibnet.ru/shell.php?videoid=3343517',
+        'https://video.sibnet.ru/shell.php?videoid=2945115',
+        'https://video.sibnet.ru/shell.php?videoid=2945122',
+        'https://video.sibnet.ru/shell.php?videoid=3343519',
+        'https://video.sibnet.ru/shell.php?videoid=2945129',
+        'https://video.sibnet.ru/shell.php?videoid=2945131',
+        'https://video.sibnet.ru/shell.php?videoid=2945145',
+        'https://video.sibnet.ru/shell.php?videoid=2945147',
+        'https://video.sibnet.ru/shell.php?videoid=2945149',
+        'https://video.sibnet.ru/shell.php?videoid=2945152',
+        'https://video.sibnet.ru/shell.php?videoid=2945154',
+        'https://video.sibnet.ru/shell.php?videoid=2945156',
+        'https://video.sibnet.ru/shell.php?videoid=2945159',
+        'https://video.sibnet.ru/shell.php?videoid=2945160',
+        'https://video.sibnet.ru/shell.php?videoid=2945161',
+        'https://video.sibnet.ru/shell.php?videoid=2945163',
+        'https://video.sibnet.ru/shell.php?videoid=2945164',
+        'https://video.sibnet.ru/shell.php?videoid=2945166',
+        'https://video.sibnet.ru/shell.php?videoid=2945168',
+        'https://video.sibnet.ru/shell.php?videoid=3343522',
+        'https://video.sibnet.ru/shell.php?videoid=2945182',
+        'https://video.sibnet.ru/shell.php?videoid=2945184',
+        'https://video.sibnet.ru/shell.php?videoid=2945189',
+        'https://video.sibnet.ru/shell.php?videoid=2945238',
+        'https://video.sibnet.ru/shell.php?videoid=2945241',
+        'https://video.sibnet.ru/shell.php?videoid=2945243',
+        'https://video.sibnet.ru/shell.php?videoid=2945247',
+        'https://video.sibnet.ru/shell.php?videoid=2945249',
+        'https://video.sibnet.ru/shell.php?videoid=2945251',
+        'https://video.sibnet.ru/shell.php?videoid=3343531',
+        'https://video.sibnet.ru/shell.php?videoid=2945253',
+        'https://video.sibnet.ru/shell.php?videoid=2945255',
+        'https://video.sibnet.ru/shell.php?videoid=2945258',
+        'https://video.sibnet.ru/shell.php?videoid=2945259',
+        'https://video.sibnet.ru/shell.php?videoid=3343534',
+        'https://video.sibnet.ru/shell.php?videoid=3343539',
+        'https://video.sibnet.ru/shell.php?videoid=2945265',
+        'https://video.sibnet.ru/shell.php?videoid=2945266',
+        'https://video.sibnet.ru/shell.php?videoid=2945268',
+        'https://video.sibnet.ru/shell.php?videoid=2945270',
+        'https://video.sibnet.ru/shell.php?videoid=2945272',
+        'https://video.sibnet.ru/shell.php?videoid=2945274',
+        'https://video.sibnet.ru/shell.php?videoid=2945275',
+        'https://video.sibnet.ru/shell.php?videoid=2945276',
+        'https://video.sibnet.ru/shell.php?videoid=2945277',
+        'https://video.sibnet.ru/shell.php?videoid=2945280',
+        'https://video.sibnet.ru/shell.php?videoid=2945284',
+        'https://video.sibnet.ru/shell.php?videoid=2945285',
+        'https://video.sibnet.ru/shell.php?videoid=2945286',
+        'https://video.sibnet.ru/shell.php?videoid=2946186',
+        'https://video.sibnet.ru/shell.php?videoid=2946187',
+        'https://video.sibnet.ru/shell.php?videoid=2945289',
+        'https://video.sibnet.ru/shell.php?videoid=2945290',
+        'https://video.sibnet.ru/shell.php?videoid=2945292',
+        'https://video.sibnet.ru/shell.php?videoid=2945293',
+        'https://video.sibnet.ru/shell.php?videoid=3500440',
+        'https://video.sibnet.ru/shell.php?videoid=2946189',
+        'https://video.sibnet.ru/shell.php?videoid=2946190',
+        'https://video.sibnet.ru/shell.php?videoid=2945298',
+        'https://video.sibnet.ru/shell.php?videoid=2945301',
+        'https://video.sibnet.ru/shell.php?videoid=2946191',
+        'https://video.sibnet.ru/shell.php?videoid=2946192',
+        'https://video.sibnet.ru/shell.php?videoid=2945303',
+        'https://video.sibnet.ru/shell.php?videoid=2945304',
+        'https://video.sibnet.ru/shell.php?videoid=2945305',
+        'https://video.sibnet.ru/shell.php?videoid=2945306',
+        'https://video.sibnet.ru/shell.php?videoid=2945308',
+        'https://video.sibnet.ru/shell.php?videoid=2945309',
+        'https://video.sibnet.ru/shell.php?videoid=2946194',
+        'https://video.sibnet.ru/shell.php?videoid=2946195',
+        'https://video.sibnet.ru/shell.php?videoid=2946196',
+        'https://video.sibnet.ru/shell.php?videoid=2946197',
+        'https://video.sibnet.ru/shell.php?videoid=2945323',
+        'https://video.sibnet.ru/shell.php?videoid=2945324',
+        'https://video.sibnet.ru/shell.php?videoid=2945326',
+        'https://video.sibnet.ru/shell.php?videoid=2945328',
+        'https://video.sibnet.ru/shell.php?videoid=2945332',
+        'https://video.sibnet.ru/shell.php?videoid=2945334',
+        'https://video.sibnet.ru/shell.php?videoid=2946199',
+        'https://video.sibnet.ru/shell.php?videoid=2946200',
+        'https://video.sibnet.ru/shell.php?videoid=2945339',
+        'https://video.sibnet.ru/shell.php?videoid=2945348',
+        'https://video.sibnet.ru/shell.php?videoid=2945349',
+        'https://video.sibnet.ru/shell.php?videoid=2945350',
+        'https://video.sibnet.ru/shell.php?videoid=2945353',
+        'https://video.sibnet.ru/shell.php?videoid=2945354',
+        'https://video.sibnet.ru/shell.php?videoid=2945357',
+        'https://video.sibnet.ru/shell.php?videoid=2945358',
+        'https://video.sibnet.ru/shell.php?videoid=2945359',
+        'https://video.sibnet.ru/shell.php?videoid=2945363',
+        'https://video.sibnet.ru/shell.php?videoid=2945367',
+        'https://video.sibnet.ru/shell.php?videoid=2945369',
+        'https://video.sibnet.ru/shell.php?videoid=2945370',
+        'https://video.sibnet.ru/shell.php?videoid=3343543',
+        'https://video.sibnet.ru/shell.php?videoid=2946202',
+        'https://video.sibnet.ru/shell.php?videoid=2946448',
+        'https://video.sibnet.ru/shell.php?videoid=2946450',
+        'https://video.sibnet.ru/shell.php?videoid=2946451',
+        'https://video.sibnet.ru/shell.php?videoid=2946453',
+        'https://video.sibnet.ru/shell.php?videoid=2946454',
+        'https://video.sibnet.ru/shell.php?videoid=2946456',
+        'https://video.sibnet.ru/shell.php?videoid=2946457',
+        'https://video.sibnet.ru/shell.php?videoid=2946458',
+        'https://video.sibnet.ru/shell.php?videoid=2946460',
+        'https://video.sibnet.ru/shell.php?videoid=2946461',
+        'https://video.sibnet.ru/shell.php?videoid=2946465',
+        'https://video.sibnet.ru/shell.php?videoid=2946469',
+        'https://video.sibnet.ru/shell.php?videoid=3343545',
+        'https://video.sibnet.ru/shell.php?videoid=2946472',
+        'https://video.sibnet.ru/shell.php?videoid=2946474',
+        'https://video.sibnet.ru/shell.php?videoid=2946477',
+        'https://video.sibnet.ru/shell.php?videoid=3343547',
+        'https://video.sibnet.ru/shell.php?videoid=2946480',
+        'https://video.sibnet.ru/shell.php?videoid=2946485',
+        'https://video.sibnet.ru/shell.php?videoid=2946489',
+        'https://video.sibnet.ru/shell.php?videoid=2946490',
+        'https://video.sibnet.ru/shell.php?videoid=2946491',
+        'https://video.sibnet.ru/shell.php?videoid=2946494',
+        'https://video.sibnet.ru/shell.php?videoid=2946496',
+        'https://video.sibnet.ru/shell.php?videoid=2946497',
+        'https://video.sibnet.ru/shell.php?videoid=2946500',
+        'https://video.sibnet.ru/shell.php?videoid=2946567',
+        'https://video.sibnet.ru/shell.php?videoid=2946568',
+        'https://video.sibnet.ru/shell.php?videoid=3343548',
+        'https://video.sibnet.ru/shell.php?videoid=2946573',
+        'https://video.sibnet.ru/shell.php?videoid=2946574',
+        'https://video.sibnet.ru/shell.php?videoid=2946576',
+        'https://video.sibnet.ru/shell.php?videoid=4721961',
+        'https://video.sibnet.ru/shell.php?videoid=2946579',
+        'https://video.sibnet.ru/shell.php?videoid=2946580',
+        'https://video.sibnet.ru/shell.php?videoid=3530827',
+        'https://video.sibnet.ru/shell.php?videoid=2946583',
+        'https://video.sibnet.ru/shell.php?videoid=2946584',
+        'https://video.sibnet.ru/shell.php?videoid=2946585',
+        'https://video.sibnet.ru/shell.php?videoid=2946586',
+        'https://video.sibnet.ru/shell.php?videoid=2946588',
+        'https://video.sibnet.ru/shell.php?videoid=2946589',
+        'https://video.sibnet.ru/shell.php?videoid=2946590',
+        'https://video.sibnet.ru/shell.php?videoid=2946591',
+        'https://video.sibnet.ru/shell.php?videoid=2946592',
+        'https://video.sibnet.ru/shell.php?videoid=2946593',
+        'https://video.sibnet.ru/shell.php?videoid=2946594',
+        'https://video.sibnet.ru/shell.php?videoid=2946596',
+        'https://video.sibnet.ru/shell.php?videoid=2946597',
+        'https://video.sibnet.ru/shell.php?videoid=3343550',
+        'https://video.sibnet.ru/shell.php?videoid=2946600',
+        'https://video.sibnet.ru/shell.php?videoid=2949385',
+        'https://video.sibnet.ru/shell.php?videoid=2949381',
+        'https://video.sibnet.ru/shell.php?videoid=2952702',
+        'https://video.sibnet.ru/shell.php?videoid=2952703',
+        'https://www.myvi.top/embed/onq5bk9eukowdrj6zd3tqru9or',
+        'https://video.sibnet.ru/shell.php?videoid=2952705',
+        'https://video.sibnet.ru/shell.php?videoid=2952706',
+        'https://video.sibnet.ru/shell.php?videoid=2952707',
+        'https://video.sibnet.ru/shell.php?videoid=2952709',
+        'https://video.sibnet.ru/shell.php?videoid=3343551',
+        'https://video.sibnet.ru/shell.php?videoid=2952711',
+        'https://video.sibnet.ru/shell.php?videoid=2952712',
+        'https://video.sibnet.ru/shell.php?videoid=2952713',
+        'https://video.sibnet.ru/shell.php?videoid=2952714',
+        'https://video.sibnet.ru/shell.php?videoid=3343554',
+        'https://video.sibnet.ru/shell.php?videoid=2952716',
+        'https://video.sibnet.ru/shell.php?videoid=2952717',
+        'https://video.sibnet.ru/shell.php?videoid=2952718',
+        'https://video.sibnet.ru/shell.php?videoid=2952719',
+        'https://video.sibnet.ru/shell.php?videoid=2952720',
+        'https://video.sibnet.ru/shell.php?videoid=2952721',
+        'https://video.sibnet.ru/shell.php?videoid=2952722',
+        'https://video.sibnet.ru/shell.php?videoid=2952723',
+        'https://video.sibnet.ru/shell.php?videoid=2952725',
+        'https://video.sibnet.ru/shell.php?videoid=2952726',
+        'https://video.sibnet.ru/shell.php?videoid=2952727',
+        'https://video.sibnet.ru/shell.php?videoid=2952745',
+        'https://video.sibnet.ru/shell.php?videoid=2952747',
+        'https://video.sibnet.ru/shell.php?videoid=3343558',
+        'https://video.sibnet.ru/shell.php?videoid=2952754',
+        'https://video.sibnet.ru/shell.php?videoid=2952756',
+        'https://video.sibnet.ru/shell.php?videoid=2952758',
+        'https://video.sibnet.ru/shell.php?videoid=2952760',
+        'https://video.sibnet.ru/shell.php?videoid=3343562',
+        'https://video.sibnet.ru/shell.php?videoid=2952764',
+        'https://video.sibnet.ru/shell.php?videoid=2952765',
+        'https://video.sibnet.ru/shell.php?videoid=2952766',
+        'https://video.sibnet.ru/shell.php?videoid=2952767',
+        'https://video.sibnet.ru/shell.php?videoid=2952768',
+        'https://video.sibnet.ru/shell.php?videoid=2952769',
+        'https://video.sibnet.ru/shell.php?videoid=2952770',
+        'https://video.sibnet.ru/shell.php?videoid=2952772',
+        'https://video.sibnet.ru/shell.php?videoid=2952773',
+        'https://video.sibnet.ru/shell.php?videoid=2952774',
+        'https://video.sibnet.ru/shell.php?videoid=2952775',
+        'https://video.sibnet.ru/shell.php?videoid=2952776',
+        'https://video.sibnet.ru/shell.php?videoid=2952777',
+        'https://video.sibnet.ru/shell.php?videoid=2952778',
+        'https://video.sibnet.ru/shell.php?videoid=2952779',
+        'https://video.sibnet.ru/shell.php?videoid=2952780',
+        'https://video.sibnet.ru/shell.php?videoid=2952782',
+        'https://video.sibnet.ru/shell.php?videoid=2952783',
+        'https://video.sibnet.ru/shell.php?videoid=2954147',
+        'https://video.sibnet.ru/shell.php?videoid=2954148',
+        'https://video.sibnet.ru/shell.php?videoid=2954150',
+        'https://video.sibnet.ru/shell.php?videoid=2954151',
+        'https://video.sibnet.ru/shell.php?videoid=2954153',
+        'https://video.sibnet.ru/shell.php?videoid=2954154',
+        'https://video.sibnet.ru/shell.php?videoid=2954155',
+        'https://video.sibnet.ru/shell.php?videoid=2954156',
+        'https://video.sibnet.ru/shell.php?videoid=2954159',
+        'https://video.sibnet.ru/shell.php?videoid=3343564',
+        'https://video.sibnet.ru/shell.php?videoid=2954163',
+        'https://video.sibnet.ru/shell.php?videoid=2954166',
+        'https://video.sibnet.ru/shell.php?videoid=2954171',
+        'https://video.sibnet.ru/shell.php?videoid=2954175',
+        'https://video.sibnet.ru/shell.php?videoid=2954177',
+        'https://video.sibnet.ru/shell.php?videoid=2954181',
+        'https://video.sibnet.ru/shell.php?videoid=2954183',
+        'https://video.sibnet.ru/shell.php?videoid=2954186',
+        'https://video.sibnet.ru/shell.php?videoid=2954188',
+        'https://video.sibnet.ru/shell.php?videoid=2954192',
+        'https://video.sibnet.ru/shell.php?videoid=2954193',
+        'https://video.sibnet.ru/shell.php?videoid=2954194',
+        'https://video.sibnet.ru/shell.php?videoid=2954195',
+        'https://video.sibnet.ru/shell.php?videoid=2954196',
+        'https://video.sibnet.ru/shell.php?videoid=2954197',
+        'https://video.sibnet.ru/shell.php?videoid=3343567',
+        'https://video.sibnet.ru/shell.php?videoid=2955691',
+        'https://video.sibnet.ru/shell.php?videoid=2955693',
+        'https://video.sibnet.ru/shell.php?videoid=2955695',
+        'https://video.sibnet.ru/shell.php?videoid=2955697',
+        'https://video.sibnet.ru/shell.php?videoid=2955699',
+        'https://video.sibnet.ru/shell.php?videoid=2955701',
+        'https://video.sibnet.ru/shell.php?videoid=2955704',
+        'https://video.sibnet.ru/shell.php?videoid=2955705',
+        'https://video.sibnet.ru/shell.php?videoid=3343569',
+        'https://video.sibnet.ru/shell.php?videoid=2955709',
+        'https://video.sibnet.ru/shell.php?videoid=2955710',
+        'https://video.sibnet.ru/shell.php?videoid=2955711',
+        'https://video.sibnet.ru/shell.php?videoid=2955712',
+        'https://video.sibnet.ru/shell.php?videoid=2955713',
+        'https://video.sibnet.ru/shell.php?videoid=2955714',
+        'https://video.sibnet.ru/shell.php?videoid=2955715',
+        'https://video.sibnet.ru/shell.php?videoid=2955716',
+        'https://video.sibnet.ru/shell.php?videoid=3343573',
+        'https://video.sibnet.ru/shell.php?videoid=2955718',
+        'https://video.sibnet.ru/shell.php?videoid=2955719',
+        'https://video.sibnet.ru/shell.php?videoid=2955720',
+        'https://video.sibnet.ru/shell.php?videoid=3343576',
+        'https://video.sibnet.ru/shell.php?videoid=2955722',
+        'https://video.sibnet.ru/shell.php?videoid=2955723',
+        'https://video.sibnet.ru/shell.php?videoid=2955724',
+        'https://video.sibnet.ru/shell.php?videoid=3343581',
+        'https://video.sibnet.ru/shell.php?videoid=2956407',
+        'https://video.sibnet.ru/shell.php?videoid=2956410',
+        'https://video.sibnet.ru/shell.php?videoid=2956411',
+        'https://video.sibnet.ru/shell.php?videoid=2956414',
+        'https://video.sibnet.ru/shell.php?videoid=3343583',
+        'https://video.sibnet.ru/shell.php?videoid=2956420',
+        'https://video.sibnet.ru/shell.php?videoid=2956421',
+        'https://video.sibnet.ru/shell.php?videoid=2956425',
+        'https://video.sibnet.ru/shell.php?videoid=2956427',
+        'https://video.sibnet.ru/shell.php?videoid=2956430',
+        'https://video.sibnet.ru/shell.php?videoid=2956433',
+        'https://video.sibnet.ru/shell.php?videoid=2956435',
+        'https://video.sibnet.ru/shell.php?videoid=2956437',
+        'https://video.sibnet.ru/shell.php?videoid=2956441',
+        'https://video.sibnet.ru/shell.php?videoid=2956442',
+        'https://video.sibnet.ru/shell.php?videoid=2956444',
+        'https://video.sibnet.ru/shell.php?videoid=2956447',
+        'https://video.sibnet.ru/shell.php?videoid=2956448',
+        'https://video.sibnet.ru/shell.php?videoid=3343586',
+        'https://video.sibnet.ru/shell.php?videoid=2956451',
+        'https://video.sibnet.ru/shell.php?videoid=2956452',
+        'https://video.sibnet.ru/shell.php?videoid=2956453',
+        'https://video.sibnet.ru/shell.php?videoid=2956454',
+        'https://video.sibnet.ru/shell.php?videoid=2956455',
+        'https://video.sibnet.ru/shell.php?videoid=2957276',
+        'https://video.sibnet.ru/shell.php?videoid=2957277',
+        'https://video.sibnet.ru/shell.php?videoid=2957278',
+        'https://video.sibnet.ru/shell.php?videoid=2957279',
+        'https://video.sibnet.ru/shell.php?videoid=2957281',
+        'https://video.sibnet.ru/shell.php?videoid=2957283',
+        'https://video.sibnet.ru/shell.php?videoid=2957284',
+        'https://video.sibnet.ru/shell.php?videoid=2957286',
+        'https://video.sibnet.ru/shell.php?videoid=2957287',
+        'https://video.sibnet.ru/shell.php?videoid=2957288',
+        'https://video.sibnet.ru/shell.php?videoid=2957290',
+        'https://video.sibnet.ru/shell.php?videoid=2957291',
+        'https://video.sibnet.ru/shell.php?videoid=2957292',
+        'https://video.sibnet.ru/shell.php?videoid=3343589',
+        'https://video.sibnet.ru/shell.php?videoid=2957297',
+        'https://video.sibnet.ru/shell.php?videoid=2957298',
+        'https://video.sibnet.ru/shell.php?videoid=2957299',
+        'https://video.sibnet.ru/shell.php?videoid=2957301',
+        'https://video.sibnet.ru/shell.php?videoid=2957302',
+        'https://video.sibnet.ru/shell.php?videoid=2957303',
+        'https://video.sibnet.ru/shell.php?videoid=2957307',
+        'https://video.sibnet.ru/shell.php?videoid=3343591',
+        'https://video.sibnet.ru/shell.php?videoid=2957311',
+        'https://video.sibnet.ru/shell.php?videoid=2957312',
+        'https://video.sibnet.ru/shell.php?videoid=2957353',
+        'https://video.sibnet.ru/shell.php?videoid=2957498',
+        'https://video.sibnet.ru/shell.php?videoid=2957499',
+        'https://video.sibnet.ru/shell.php?videoid=2957501',
+        'https://video.sibnet.ru/shell.php?videoid=2957502',
+        'https://video.sibnet.ru/shell.php?videoid=2957503',
+        'https://video.sibnet.ru/shell.php?videoid=2957504',
+        'https://video.sibnet.ru/shell.php?videoid=2957505',
+        'https://video.sibnet.ru/shell.php?videoid=2957506',
+        'https://video.sibnet.ru/shell.php?videoid=3343593',
+        'https://video.sibnet.ru/shell.php?videoid=2957508',
+        'https://video.sibnet.ru/shell.php?videoid=2957509',
+        'https://video.sibnet.ru/shell.php?videoid=2957510',
+        'https://video.sibnet.ru/shell.php?videoid=2957511',
+        'https://video.sibnet.ru/shell.php?videoid=2957513',
+        'https://video.sibnet.ru/shell.php?videoid=2957515',
+        'https://video.sibnet.ru/shell.php?videoid=2957518',
+        'https://video.sibnet.ru/shell.php?videoid=2957521',
+        'https://video.sibnet.ru/shell.php?videoid=2957523',
+        'https://video.sibnet.ru/shell.php?videoid=2957524',
+        'https://video.sibnet.ru/shell.php?videoid=3343596',
+        'https://video.sibnet.ru/shell.php?videoid=2957528',
+        'https://video.sibnet.ru/shell.php?videoid=2957529',
+        'https://video.sibnet.ru/shell.php?videoid=2957531',
+        'https://video.sibnet.ru/shell.php?videoid=2957532',
+        'https://video.sibnet.ru/shell.php?videoid=2957534',
+        'https://video.sibnet.ru/shell.php?videoid=2957535',
+        'https://video.sibnet.ru/shell.php?videoid=2958031',
+        'https://video.sibnet.ru/shell.php?videoid=2958036',
+        'https://video.sibnet.ru/shell.php?videoid=2958041',
+        'https://video.sibnet.ru/shell.php?videoid=2958044',
+        'https://video.sibnet.ru/shell.php?videoid=2958045',
+        'https://video.sibnet.ru/shell.php?videoid=3343604',
+        'https://video.sibnet.ru/shell.php?videoid=2958048',
+        'https://video.sibnet.ru/shell.php?videoid=2958051',
+        'https://video.sibnet.ru/shell.php?videoid=2958052',
+        'https://video.sibnet.ru/shell.php?videoid=2958053',
+        'https://video.sibnet.ru/shell.php?videoid=2958054',
+        'https://video.sibnet.ru/shell.php?videoid=2958055',
+        'https://video.sibnet.ru/shell.php?videoid=2958056',
+        'https://video.sibnet.ru/shell.php?videoid=2958060',
+        'https://video.sibnet.ru/shell.php?videoid=2958061',
+        'https://video.sibnet.ru/shell.php?videoid=2958063',
+        'https://video.sibnet.ru/shell.php?videoid=2958064',
+        'https://video.sibnet.ru/shell.php?videoid=2958065',
+        'https://video.sibnet.ru/shell.php?videoid=2958066',
+        'https://video.sibnet.ru/shell.php?videoid=2958067',
+        'https://video.sibnet.ru/shell.php?videoid=2958068',
+        'https://video.sibnet.ru/shell.php?videoid=2958070',
+        'https://video.sibnet.ru/shell.php?videoid=2958071',
+        'https://video.sibnet.ru/shell.php?videoid=2958072',
+        'https://video.sibnet.ru/shell.php?videoid=2958659',
+        'https://video.sibnet.ru/shell.php?videoid=2958660',
+        'https://video.sibnet.ru/shell.php?videoid=2958663',
+        'https://video.sibnet.ru/shell.php?videoid=2958666',
+        'https://video.sibnet.ru/shell.php?videoid=2958667',
+        'https://video.sibnet.ru/shell.php?videoid=2958668',
+        'https://video.sibnet.ru/shell.php?videoid=2958669',
+        'https://video.sibnet.ru/shell.php?videoid=2958672',
+        'https://video.sibnet.ru/shell.php?videoid=2958674',
+        'https://video.sibnet.ru/shell.php?videoid=2958677',
+        'https://video.sibnet.ru/shell.php?videoid=2958679',
+        'https://video.sibnet.ru/shell.php?videoid=2958680',
+        'https://video.sibnet.ru/shell.php?videoid=2958683',
+        'https://video.sibnet.ru/shell.php?videoid=2958684',
+        'https://video.sibnet.ru/shell.php?videoid=2958685',
+        'https://video.sibnet.ru/shell.php?videoid=2958686',
+        'https://video.sibnet.ru/shell.php?videoid=2958687',
+        'https://video.sibnet.ru/shell.php?videoid=2958690',
+        'https://video.sibnet.ru/shell.php?videoid=2958692',
+        'https://video.sibnet.ru/shell.php?videoid=2958696',
+        'https://video.sibnet.ru/shell.php?videoid=2958698',
+        'https://video.sibnet.ru/shell.php?videoid=2958699',
+        'https://video.sibnet.ru/shell.php?videoid=2958701',
+        'https://video.sibnet.ru/shell.php?videoid=2958752',
+        'https://video.sibnet.ru/shell.php?videoid=2958753',
+        'https://video.sibnet.ru/shell.php?videoid=2958756',
+        'https://video.sibnet.ru/shell.php?videoid=3343608',
+        'https://video.sibnet.ru/shell.php?videoid=2958759',
+        'https://video.sibnet.ru/shell.php?videoid=2958760',
+        'https://video.sibnet.ru/shell.php?videoid=3343613',
+        'https://video.sibnet.ru/shell.php?videoid=2958762',
+        'https://video.sibnet.ru/shell.php?videoid=2958763',
+        'https://video.sibnet.ru/shell.php?videoid=2958764',
+        'https://video.sibnet.ru/shell.php?videoid=3343615',
+        'https://video.sibnet.ru/shell.php?videoid=2958768',
+        'https://video.sibnet.ru/shell.php?videoid=2958769',
+        'https://video.sibnet.ru/shell.php?videoid=2958770',
+        'https://video.sibnet.ru/shell.php?videoid=2958771',
+        'https://video.sibnet.ru/shell.php?videoid=2958772',
+        'https://video.sibnet.ru/shell.php?videoid=2958773',
+        'https://video.sibnet.ru/shell.php?videoid=2958774',
+        'https://video.sibnet.ru/shell.php?videoid=2958775',
+        'https://video.sibnet.ru/shell.php?videoid=2958776',
+        'https://video.sibnet.ru/shell.php?videoid=2958779',
+        'https://video.sibnet.ru/shell.php?videoid=2958780',
+        'https://video.sibnet.ru/shell.php?videoid=2958781',
+        'https://video.sibnet.ru/shell.php?videoid=2958782',
+        'https://video.sibnet.ru/shell.php?videoid=2958783',
+        'https://video.sibnet.ru/shell.php?videoid=3560493',
+        'https://video.sibnet.ru/shell.php?videoid=2959189',
+        'https://video.sibnet.ru/shell.php?videoid=2959192',
+        'https://video.sibnet.ru/shell.php?videoid=2959194',
+        'https://video.sibnet.ru/shell.php?videoid=2959200',
+        'https://video.sibnet.ru/shell.php?videoid=2959204',
+        'https://video.sibnet.ru/shell.php?videoid=2959208',
+        'https://video.sibnet.ru/shell.php?videoid=2959211',
+        'https://video.sibnet.ru/shell.php?videoid=2959214',
+        'https://video.sibnet.ru/shell.php?videoid=2959218',
+        'https://video.sibnet.ru/shell.php?videoid=2959220',
+        'https://video.sibnet.ru/shell.php?videoid=2959222',
+        'https://video.sibnet.ru/shell.php?videoid=2959226',
+        'https://video.sibnet.ru/shell.php?videoid=2959230',
+        'https://video.sibnet.ru/shell.php?videoid=2959233',
+        'https://video.sibnet.ru/shell.php?videoid=2959236',
+        'https://video.sibnet.ru/shell.php?videoid=2959238',
+        'https://video.sibnet.ru/shell.php?videoid=2959241',
+        'https://video.sibnet.ru/shell.php?videoid=2959243',
+        'https://video.sibnet.ru/shell.php?videoid=2959246',
+        'https://video.sibnet.ru/shell.php?videoid=2959248',
+        'https://video.sibnet.ru/shell.php?videoid=2959251',
+        'https://video.sibnet.ru/shell.php?videoid=2959255',
+        'https://video.sibnet.ru/shell.php?videoid=2959258',
+        'https://video.sibnet.ru/shell.php?videoid=2959261',
+        'https://video.sibnet.ru/shell.php?videoid=2959263',
+        'https://video.sibnet.ru/shell.php?videoid=2959265',
+        'https://video.sibnet.ru/shell.php?videoid=2959679',
+        'https://video.sibnet.ru/shell.php?videoid=2959680',
+        'https://video.sibnet.ru/shell.php?videoid=2959681',
+        'https://video.sibnet.ru/shell.php?videoid=2959682',
+        'https://video.sibnet.ru/shell.php?videoid=2959683',
+        'https://video.sibnet.ru/shell.php?videoid=2959684',
+        'https://video.sibnet.ru/shell.php?videoid=2959686',
+        'https://video.sibnet.ru/shell.php?videoid=2959687',
+        'https://video.sibnet.ru/shell.php?videoid=2959688',
+        'https://video.sibnet.ru/shell.php?videoid=2959689',
+        'https://video.sibnet.ru/shell.php?videoid=2959690',
+        'https://video.sibnet.ru/shell.php?videoid=2959692',
+        'https://video.sibnet.ru/shell.php?videoid=2959694',
+        'https://video.sibnet.ru/shell.php?videoid=2959695',
+        'https://video.sibnet.ru/shell.php?videoid=2959696',
+        'https://video.sibnet.ru/shell.php?videoid=2959697',
+        'https://video.sibnet.ru/shell.php?videoid=2959698',
+        'https://video.sibnet.ru/shell.php?videoid=2959699',
+        'https://video.sibnet.ru/shell.php?videoid=2959700',
+        'https://video.sibnet.ru/shell.php?videoid=2959701',
+        'https://video.sibnet.ru/shell.php?videoid=2959702',
+        'https://video.sibnet.ru/shell.php?videoid=2959703',
+        'https://video.sibnet.ru/shell.php?videoid=2959705',
+        'https://video.sibnet.ru/shell.php?videoid=2959707',
+        'https://video.sibnet.ru/shell.php?videoid=2959709',
+        'https://video.sibnet.ru/shell.php?videoid=2959711',
+        'https://video.sibnet.ru/shell.php?videoid=2959712',
+        'https://video.sibnet.ru/shell.php?videoid=2959714',
+        'https://video.sibnet.ru/shell.php?videoid=3515886',
+        'https://video.sibnet.ru/shell.php?videoid=2959717',
+        'https://video.sibnet.ru/shell.php?videoid=2959718',
+        'https://video.sibnet.ru/shell.php?videoid=2959720',
+        'https://video.sibnet.ru/shell.php?videoid=2959721',
+        'https://video.sibnet.ru/shell.php?videoid=2959722',
+        'https://video.sibnet.ru/shell.php?videoid=2959724',
+        'https://video.sibnet.ru/shell.php?videoid=2959725',
+        'https://video.sibnet.ru/shell.php?videoid=2959728',
+        'https://video.sibnet.ru/shell.php?videoid=3343282',
+        'https://video.sibnet.ru/shell.php?videoid=3343292',
+        'https://video.sibnet.ru/shell.php?videoid=3343294',
+        'https://video.sibnet.ru/shell.php?videoid=3343295',
+        'https://video.sibnet.ru/shell.php?videoid=3343296',
+        'https://video.sibnet.ru/shell.php?videoid=3343297',
+        'https://video.sibnet.ru/shell.php?videoid=3560501',
+        'https://video.sibnet.ru/shell.php?videoid=3343299',
+        'https://video.sibnet.ru/shell.php?videoid=3343300',
+        'https://video.sibnet.ru/shell.php?videoid=3343305',
+        'https://video.sibnet.ru/shell.php?videoid=3343311',
+        'https://video.sibnet.ru/shell.php?videoid=3343315',
+        'https://video.sibnet.ru/shell.php?videoid=3343317',
+        'https://video.sibnet.ru/shell.php?videoid=3343318',
+        'https://video.sibnet.ru/shell.php?videoid=3343319',
+        'https://video.sibnet.ru/shell.php?videoid=3343320',
+        'https://video.sibnet.ru/shell.php?videoid=3343321',
+        'https://video.sibnet.ru/shell.php?videoid=3343322',
+        'https://video.sibnet.ru/shell.php?videoid=3343323',
+        'https://video.sibnet.ru/shell.php?videoid=3343324',
+        'https://video.sibnet.ru/shell.php?videoid=3343325',
+        'https://video.sibnet.ru/shell.php?videoid=3343326',
+        'https://video.sibnet.ru/shell.php?videoid=3343327',
+        'https://video.sibnet.ru/shell.php?videoid=3343328',
+        'https://video.sibnet.ru/shell.php?videoid=3343329',
+        'https://video.sibnet.ru/shell.php?videoid=3343332',
+        'https://video.sibnet.ru/shell.php?videoid=3343338',
+        'https://video.sibnet.ru/shell.php?videoid=3343342',
+        'https://video.sibnet.ru/shell.php?videoid=3343344',
+        'https://video.sibnet.ru/shell.php?videoid=3343347',
+        'https://video.sibnet.ru/shell.php?videoid=3343349',
+        'https://video.sibnet.ru/shell.php?videoid=3343350',
+
+ ]
+    }
+    // Ajoutez d'autres lecteurs et leurs vidéos ici
+     
+  ];
+  
+  var currentEpisode = 1;
+
+  function updateVideo() {
+    var episode = $('#selection_EP').val();
+    var lecteur = $('#selection_LECTEUR').val();
+    
+    if (episode && lecteur) {
+      var videoLink = episodes.find(function(ep) {
+        return ep.lecteur === lecteur;
+      }).videos[episode - 1];
+      
+      if (videoLink) {
+        $('#video_EP').attr('src', videoLink);
+      }
+      else {
+        $('#videoContainer').html('Lecteur ou épisode non valide.');
+      }
+    }
+  }
+
+  $('#selection_EP, #selection_LECTEUR').change(function(){
+    updateVideo();
+  });
+
+  $('#PRECEDENT').click(function() {
+    if (currentEpisode > 1) {
+      currentEpisode--;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  $('#SUIVANT').click(function() {
+    var totalEpisodes = $('#selection_EP option').length;
+    if (currentEpisode < totalEpisodes) {
+      currentEpisode++;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  // Code pour charger la première vidéo par défaut
+  var defaultEpisode = '1';
+  var defaultLecteur = '1';
+
+  $('#selection_EP').val(defaultEpisode);
+  $('#selection_LECTEUR').val(defaultLecteur);
+  updateVideo();
+});
+</script>
+
+
+		  
+        
+        <center><p id="phrase_grise">Un problème sur les vidéos ? Changez de lecteur (sinon consultezvla page aide).</p></center>
+        
+        		  <div>
+			  <select id="selection_LECTEUR">
+			    <option value="1">Lecteur 1</option>
+		      <option value="2">Lecteur 2</option>
+			  </select>
+      </div>
+      
+      
+		  
+		  
+		  <div>
+		    <select id="selection_EP">
+		      <option value="1">Épisode 1</option>
+          <option value="2">Épisode 2</option>
+          <option value="3">Épisode 3</option>
+          <option value="4">Épisode 4</option>
+          <option value="5">Épisode 5</option>
+          <option value="6">Épisode 6</option>
+          <option value="7">Épisode 7</option>
+          <option value="8">Épisode 8</option>
+          <option value="9">Épisode 9</option>
+          <option value="10">Épisode 10</option>
+          <option value="11">Épisode 11</option>
+          <option value="12">Épisode 12</option>
+          <option value="13">Épisode 13</option>
+          <option value="14">Épisode 14</option>
+          <option value="15">Épisode 15</option>
+          <option value="16">Épisode 16</option>
+          <option value="17">Épisode 17</option>
+          <option value="18">Épisode 18</option>
+          <option value="19">Épisode 19</option>
+          <option value="20">Épisode 20</option>
+          <option value="21">Épisode 21</option>
+          <option value="22">Épisode 22</option>
+          <option value="23">Épisode 23</option>
+          <option value="24">Épisode 24</option>
+          <option value="25">Épisode 25</option>
+          <option value="26">Épisode 26</option>
+          <option value="27">Épisode 27</option>
+          <option value="28">Épisode 28</option>
+          <option value="29">Épisode 29</option>
+          <option value="30">Épisode 30</option>
+          <option value="31">Épisode 31</option>
+          <option value="32">Épisode 32</option>
+          <option value="33">Épisode 33</option>
+          <option value="34">Épisode 34</option>
+          <option value="35">Épisode 35</option>
+          <option value="36">Épisode 36</option>
+          <option value="37">Épisode 37</option>
+          <option value="38">Épisode 38</option>
+          <option value="39">Épisode 39</option>
+          <option value="40">Épisode 40</option>
+          <option value="41">Épisode 41</option>
+          <option value="42">Épisode 42</option>
+          <option value="43">Épisode 43</option>
+          <option value="44">Épisode 44</option>
+          <option value="45">Épisode 45</option>
+          <option value="46">Épisode 46</option>
+          <option value="47">Épisode 47</option>
+          <option value="48">Épisode 48</option>
+          <option value="49">Épisode 49</option>
+          <option value="50">Épisode 50</option>
+          <option value="51">Épisode 51</option>
+          <option value="52">Épisode 52</option>
+          <option value="53">Épisode 53</option>
+          <option value="54">Épisode 54</option>
+          <option value="55">Épisode 55</option>
+          <option value="56">Épisode 56</option>
+          <option value="57">Épisode 57</option>
+          <option value="58">Épisode 58</option>
+          <option value="59">Épisode 59</option>
+          <option value="60">Épisode 60</option>
+          <option value="61">Épisode 61</option>
+          <option value="62">Épisode 62</option>
+          <option value="63">Épisode 63</option>
+          <option value="64">Épisode 64</option>
+          <option value="65">Épisode 65</option>
+          <option value="66">Épisode 66</option>
+          <option value="67">Épisode 67</option>
+          <option value="68">Épisode 68</option>
+          <option value="69">Épisode 69</option>
+          <option value="70">Épisode 70</option>
+          <option value="71">Épisode 71</option>
+          <option value="72">Épisode 72</option>
+          <option value="73">Épisode 73</option>
+          <option value="74">Épisode 74</option>
+          <option value="75">Épisode 75</option>
+          <option value="76">Épisode 76</option>
+          <option value="77">Épisode 77</option>
+          <option value="78">Épisode 78</option>
+          <option value="79">Épisode 79</option>
+          <option value="80">Épisode 80</option>
+          <option value="81">Épisode 81</option>
+          <option value="82">Épisode 82</option>
+          <option value="83">Épisode 83</option>
+          <option value="84">Épisode 84</option>
+          <option value="85">Épisode 85</option>
+          <option value="86">Épisode 86</option>
+          <option value="87">Épisode 87</option>
+          <option value="88">Épisode 88</option>
+          <option value="89">Épisode 89</option>
+          <option value="90">Épisode 90</option>
+          <option value="91">Épisode 91</option>
+          <option value="92">Épisode 92</option>
+          <option value="93">Épisode 93</option>
+          <option value="94">Épisode 94</option>
+          <option value="95">Épisode 95</option>
+          <option value="96">Épisode 96</option>
+          <option value="97">Épisode 97</option>
+          <option value="98">Épisode 98</option>
+          <option value="99">Épisode 99</option>
+          <option value="100">Épisode 100</option>
+          <option value="101">Épisode 101</option>
+          <option value="102">Épisode 102</option>
+          <option value="103">Épisode 103</option>
+          <option value="104">Épisode 104</option>
+          <option value="105">Épisode 105</option>
+          <option value="106">Épisode 106</option>
+          <option value="107">Épisode 107</option>
+          <option value="108">Épisode 108</option>
+          <option value="109">Épisode 109</option>
+          <option value="110">Épisode 110</option>
+          <option value="111">Épisode 111</option>
+          <option value="112">Épisode 112</option>
+          <option value="113">Épisode 113</option>
+          <option value="114">Épisode 114</option>
+          <option value="115">Épisode 115</option>
+          <option value="116">Épisode 116</option>
+          <option value="117">Épisode 117</option>
+          <option value="118">Épisode 118</option>
+          <option value="119">Épisode 119</option>
+          <option value="120">Épisode 120</option>
+          <option value="121">Épisode 121</option>
+          <option value="122">Épisode 122</option>
+          <option value="123">Épisode 123</option>
+          <option value="124">Épisode 124</option>
+          <option value="125">Épisode 125</option>
+          <option value="126">Épisode 126</option>
+          <option value="127">Épisode 127</option>
+          <option value="128">Épisode 128</option>
+          <option value="129">Épisode 129</option>
+          <option value="130">Épisode 130</option>
+          <option value="131">Épisode 131</option>
+          <option value="132">Épisode 132</option>
+          <option value="133">Épisode 133</option>
+          <option value="134">Épisode 134</option>
+          <option value="135">Épisode 135</option>
+          <option value="136">Épisode 136</option>
+          <option value="137">Épisode 137</option>
+          <option value="138">Épisode 138</option>
+          <option value="139">Épisode 139</option>
+          <option value="140">Épisode 140</option>
+          <option value="141">Épisode 141</option>
+          <option value="142">Épisode 142</option>
+          <option value="143">Épisode 143</option>
+          <option value="144">Épisode 144</option>
+          <option value="145">Épisode 145</option>
+          <option value="146">Épisode 146</option>
+          <option value="147">Épisode 147</option>
+          <option value="148">Épisode 148</option>
+          <option value="149">Épisode 149</option>
+          <option value="150">Épisode 150</option>
+          <option value="151">Épisode 151</option>
+          <option value="152">Épisode 152</option>
+          <option value="153">Épisode 153</option>
+          <option value="154">Épisode 154</option>
+          <option value="155">Épisode 155</option>
+          <option value="156">Épisode 156</option>
+          <option value="157">Épisode 157</option>
+          <option value="158">Épisode 158</option>
+          <option value="159">Épisode 159</option>
+          <option value="160">Épisode 160</option>
+          <option value="161">Épisode 161</option>
+          <option value="162">Épisode 162</option>
+          <option value="163">Épisode 163</option>
+          <option value="164">Épisode 164</option>
+          <option value="165">Épisode 165</option>
+          <option value="166">Épisode 166</option>
+          <option value="167">Épisode 167</option>
+          <option value="168">Épisode 168</option>
+          <option value="169">Épisode 169</option>
+          <option value="170">Épisode 170</option>
+          <option value="171">Épisode 171</option>
+          <option value="172">Épisode 172</option>
+          <option value="173">Épisode 173</option>
+          <option value="174">Épisode 174</option>
+          <option value="175">Épisode 175</option>
+          <option value="176">Épisode 176</option>
+          <option value="177">Épisode 177</option>
+          <option value="178">Épisode 178</option>
+          <option value="179">Épisode 179</option>
+          <option value="180">Épisode 180</option>
+          <option value="181">Épisode 181</option>
+          <option value="182">Épisode 182</option>
+          <option value="183">Épisode 183</option>
+          <option value="184">Épisode 184</option>
+          <option value="185">Épisode 185</option>
+          <option value="186">Épisode 186</option>
+          <option value="187">Épisode 187</option>
+          <option value="188">Épisode 188</option>
+          <option value="189">Épisode 189</option>
+          <option value="190">Épisode 190</option>
+          <option value="191">Épisode 191</option>
+          <option value="192">Épisode 192</option>
+          <option value="193">Épisode 193</option>
+          <option value="194">Épisode 194</option>
+          <option value="195">Épisode 195</option>
+          <option value="196">Épisode 196</option>
+          <option value="197">Épisode 197</option>
+          <option value="198">Épisode 198</option>
+          <option value="199">Épisode 199</option>
+          <option value="200">Épisode 200</option>
+          <option value="201">Épisode 201</option>
+          <option value="202">Épisode 202</option>
+          <option value="203">Épisode 203</option>
+          <option value="204">Épisode 204</option>
+          <option value="205">Épisode 205</option>
+          <option value="206">Épisode 206</option>
+          <option value="207">Épisode 207</option>
+          <option value="208">Épisode 208</option>
+          <option value="209">Épisode 209</option>
+          <option value="210">Épisode 210</option>
+          <option value="211">Épisode 211</option>
+          <option value="212">Épisode 212</option>
+          <option value="213">Épisode 213</option>
+          <option value="214">Épisode 214</option>
+          <option value="215">Épisode 215</option>
+          <option value="216">Épisode 216</option>
+          <option value="217">Épisode 217</option>
+          <option value="218">Épisode 218</option>
+          <option value="219">Épisode 219</option>
+          <option value="220">Épisode 220</option>
+          <option value="221">Épisode 221</option>
+          <option value="222">Épisode 222</option>
+          <option value="223">Épisode 223</option>
+          <option value="224">Épisode 224</option>
+          <option value="225">Épisode 225</option>
+          <option value="226">Épisode 226</option>
+          <option value="227">Épisode 227</option>
+          <option value="228">Épisode 228</option>
+          <option value="229">Épisode 229</option>
+          <option value="230">Épisode 230</option>
+          <option value="231">Épisode 231</option>
+          <option value="232">Épisode 232</option>
+          <option value="233">Épisode 233</option>
+          <option value="234">Épisode 234</option>
+          <option value="235">Épisode 235</option>
+          <option value="236">Épisode 236</option>
+          <option value="237">Épisode 237</option>
+          <option value="238">Épisode 238</option>
+          <option value="239">Épisode 239</option>
+          <option value="240">Épisode 240</option>
+          <option value="241">Épisode 241</option>
+          <option value="242">Épisode 242</option>
+          <option value="243">Épisode 243</option>
+          <option value="244">Épisode 244</option>
+          <option value="245">Épisode 245</option>
+          <option value="246">Épisode 246</option>
+          <option value="247">Épisode 247</option>
+          <option value="248">Épisode 248</option>
+          <option value="249">Épisode 249</option>
+          <option value="250">Épisode 250</option>
+          <option value="251">Épisode 251</option>
+          <option value="252">Épisode 252</option>
+          <option value="253">Épisode 253</option>
+          <option value="254">Épisode 254</option>
+          <option value="255">Épisode 255</option>
+          <option value="256">Épisode 256</option>
+          <option value="257">Épisode 257</option>
+          <option value="258">Épisode 258</option>
+          <option value="259">Épisode 259</option>
+          <option value="260">Épisode 260</option>
+          <option value="261">Épisode 261</option>
+          <option value="262">Épisode 262</option>
+          <option value="263">Épisode 263</option>
+          <option value="264">Épisode 264</option>
+          <option value="265">Épisode 265</option>
+          <option value="266">Épisode 266</option>
+          <option value="267">Épisode 267</option>
+          <option value="268">Épisode 268</option>
+          <option value="269">Épisode 269</option>
+          <option value="270">Épisode 270</option>
+          <option value="271">Épisode 271</option>
+          <option value="272">Épisode 272</option>
+          <option value="273">Épisode 273</option>
+          <option value="274">Épisode 274</option>
+          <option value="275">Épisode 275</option>
+          <option value="276">Épisode 276</option>
+          <option value="277">Épisode 277</option>
+          <option value="278">Épisode 278</option>
+          <option value="279">Épisode 279</option>
+          <option value="280">Épisode 280</option>
+          <option value="281">Épisode 281</option>
+          <option value="282">Épisode 282</option>
+          <option value="283">Épisode 283</option>
+          <option value="284">Épisode 284</option>
+          <option value="285">Épisode 285</option>
+          <option value="286">Épisode 286</option>
+          <option value="287">Épisode 287</option>
+          <option value="288">Épisode 288</option>
+          <option value="289">Épisode 289</option>
+          <option value="290">Épisode 290</option>
+          <option value="291">Épisode 291</option>
+          <option value="292">Épisode 292</option>
+          <option value="293">Épisode 293</option>
+          <option value="294">Épisode 294</option>
+          <option value="295">Épisode 295</option>
+          <option value="296">Épisode 296</option>
+          <option value="297">Épisode 297</option>
+          <option value="298">Épisode 298</option>
+          <option value="299">Épisode 299</option>
+          <option value="300">Épisode 300</option>
+          <option value="301">Épisode 301</option>
+          <option value="302">Épisode 302</option>
+          <option value="303">Épisode 303</option>
+          <option value="304">Épisode 304</option>
+          <option value="305">Épisode 305</option>
+          <option value="306">Épisode 306</option>
+          <option value="307">Épisode 307</option>
+          <option value="308">Épisode 308</option>
+          <option value="309">Épisode 309</option>
+          <option value="310">Épisode 310</option>
+          <option value="311">Épisode 311</option>
+          <option value="312">Épisode 312</option>
+          <option value="313">Épisode 313</option>
+          <option value="314">Épisode 314</option>
+          <option value="315">Épisode 315</option>
+          <option value="316">Épisode 316</option>
+          <option value="317">Épisode 317</option>
+          <option value="318">Épisode 318</option>
+          <option value="319">Épisode 319</option>
+          <option value="320">Épisode 320</option>
+          <option value="321">Épisode 321</option>
+          <option value="322">Épisode 322</option>
+          <option value="323">Épisode 323</option>
+          <option value="324">Épisode 324</option>
+          <option value="325">Épisode 325</option>
+          <option value="326">Épisode 326</option>
+          <option value="327">Épisode 327</option>
+          <option value="328">Épisode 328</option>
+          <option value="329">Épisode 329</option>
+          <option value="330">Épisode 330</option>
+          <option value="331">Épisode 331</option>
+          <option value="332">Épisode 332</option>
+          <option value="333">Épisode 333</option>
+          <option value="334">Épisode 334</option>
+          <option value="335">Épisode 335</option>
+          <option value="336">Épisode 336</option>
+          <option value="337">Épisode 337</option>
+          <option value="338">Épisode 338</option>
+          <option value="339">Épisode 339</option>
+          <option value="340">Épisode 340</option>
+          <option value="341">Épisode 341</option>
+          <option value="342">Épisode 342</option>
+          <option value="343">Épisode 343</option>
+          <option value="344">Épisode 344</option>
+          <option value="345">Épisode 345</option>
+          <option value="346">Épisode 346</option>
+          <option value="347">Épisode 347</option>
+          <option value="348">Épisode 348</option>
+          <option value="349">Épisode 349</option>
+          <option value="350">Épisode 350</option>
+          <option value="351">Épisode 351</option>
+          <option value="352">Épisode 352</option>
+          <option value="353">Épisode 353</option>
+          <option value="354">Épisode 354</option>
+          <option value="355">Épisode 355</option>
+          <option value="356">Épisode 356</option>
+          <option value="357">Épisode 357</option>
+          <option value="358">Épisode 358</option>
+          <option value="359">Épisode 359</option>
+          <option value="360">Épisode 360</option>
+          <option value="361">Épisode 361</option>
+          <option value="362">Épisode 362</option>
+          <option value="363">Épisode 363</option>
+          <option value="364">Épisode 364</option>
+          <option value="365">Épisode 365</option>
+          <option value="366">Épisode 366</option>
+          <option value="367">Épisode 367</option>
+          <option value="368">Épisode 368</option>
+          <option value="369">Épisode 369</option>
+          <option value="370">Épisode 370</option>
+          <option value="371">Épisode 371</option>
+          <option value="372">Épisode 372</option>
+          <option value="373">Épisode 373</option>
+          <option value="374">Épisode 374</option>
+          <option value="375">Épisode 375</option>
+          <option value="376">Épisode 376</option>
+          <option value="377">Épisode 377</option>
+          <option value="378">Épisode 378</option>
+          <option value="379">Épisode 379</option>
+          <option value="380">Épisode 380</option>
+          <option value="381">Épisode 381</option>
+          <option value="382">Épisode 382</option>
+          <option value="383">Épisode 383</option>
+          <option value="384">Épisode 384</option>
+          <option value="385">Épisode 385</option>
+          <option value="386">Épisode 386</option>
+          <option value="387">Épisode 387</option>
+          <option value="388">Épisode 388</option>
+          <option value="389">Épisode 389</option>
+          <option value="390">Épisode 390</option>
+          <option value="391">Épisode 391</option>
+          <option value="392">Épisode 392</option>
+          <option value="393">Épisode 393</option>
+          <option value="394">Épisode 394</option>
+          <option value="395">Épisode 395</option>
+          <option value="396">Épisode 396</option>
+          <option value="397">Épisode 397</option>
+          <option value="398">Épisode 398</option>
+          <option value="399">Épisode 399</option>
+          <option value="400">Épisode 400</option>
+          <option value="401">Épisode 401</option>
+          <option value="402">Épisode 402</option>
+          <option value="403">Épisode 403</option>
+          <option value="404">Épisode 404</option>
+          <option value="405">Épisode 405</option>
+          <option value="406">Épisode 406</option>
+          <option value="407">Épisode 407</option>
+          <option value="408">Épisode 408</option>
+          <option value="409">Épisode 409</option>
+          <option value="410">Épisode 410</option>
+          <option value="411">Épisode 411</option>
+          <option value="412">Épisode 412</option>
+          <option value="413">Épisode 413</option>
+          <option value="414">Épisode 414</option>
+          <option value="415">Épisode 415</option>
+          <option value="416">Épisode 416</option>
+          <option value="417">Épisode 417</option>
+          <option value="418">Épisode 418</option>
+          <option value="419">Épisode 419</option>
+          <option value="420">Épisode 420</option>
+          <option value="421">Épisode 421</option>
+          <option value="422">Épisode 422</option>
+          <option value="423">Épisode 423</option>
+          <option value="424">Épisode 424</option>
+          <option value="425">Épisode 425</option>
+          <option value="426">Épisode 426</option>
+          <option value="427">Épisode 427</option>
+          <option value="428">Épisode 428</option>
+          <option value="429">Épisode 429</option>
+          <option value="430">Épisode 430</option>
+          <option value="431">Épisode 431</option>
+          <option value="432">Épisode 432</option>
+          <option value="433">Épisode 433</option>
+          <option value="434">Épisode 434</option>
+          <option value="435">Épisode 435</option>
+          <option value="436">Épisode 436</option>
+          <option value="437">Épisode 437</option>
+          <option value="438">Épisode 438</option>
+          <option value="439">Épisode 439</option>
+          <option value="440">Épisode 440</option>
+          <option value="441">Épisode 441</option>
+          <option value="442">Épisode 442</option>
+          <option value="443">Épisode 443</option>
+          <option value="444">Épisode 444</option>
+          <option value="445">Épisode 445</option>
+          <option value="446">Épisode 446</option>
+          <option value="447">Épisode 447</option>
+          <option value="448">Épisode 448</option>
+          <option value="449">Épisode 449</option>
+          <option value="450">Épisode 450</option>
+          <option value="451">Épisode 451</option>
+          <option value="452">Épisode 452</option>
+          <option value="453">Épisode 453</option>
+          <option value="454">Épisode 454</option>
+          <option value="455">Épisode 455</option>
+          <option value="456">Épisode 456</option>
+          <option value="457">Épisode 457</option>
+          <option value="458">Épisode 458</option>
+          <option value="459">Épisode 459</option>
+          <option value="460">Épisode 460</option>
+          <option value="461">Épisode 461</option>
+          <option value="462">Épisode 462</option>
+          <option value="463">Épisode 463</option>
+          <option value="464">Épisode 464</option>
+          <option value="465">Épisode 465</option>
+          <option value="466">Épisode 466</option>
+          <option value="467">Épisode 467</option>
+          <option value="468">Épisode 468</option>
+          <option value="469">Épisode 469</option>
+          <option value="470">Épisode 470</option>
+          <option value="471">Épisode 471</option>
+          <option value="472">Épisode 472</option>
+          <option value="473">Épisode 473</option>
+          <option value="474">Épisode 474</option>
+          <option value="475">Épisode 475</option>
+          <option value="476">Épisode 476</option>
+          <option value="477">Épisode 477</option>
+          <option value="478">Épisode 478</option>
+          <option value="479">Épisode 479</option>
+          <option value="480">Épisode 480</option>
+          <option value="481">Épisode 481</option>
+          <option value="482">Épisode 482</option>
+          <option value="483">Épisode 483</option>
+          <option value="484">Épisode 484</option>
+          <option value="485">Épisode 485</option>
+          <option value="486">Épisode 486</option>
+          <option value="487">Épisode 487</option>
+          <option value="488">Épisode 488</option>
+          <option value="489">Épisode 489</option>
+          <option value="490">Épisode 490</option>
+          <option value="491">Épisode 491</option>
+          <option value="492">Épisode 492</option>
+          <option value="493">Épisode 493</option>
+          <option value="494">Épisode 494</option>
+          <option value="495">Épisode 495</option>
+          <option value="496">Épisode 496</option>
+          <option value="497">Épisode 497</option>
+          <option value="498">Épisode 498</option>
+          <option value="499">Épisode 499</option>
+          <option value="500">Épisode 500</option>
+		    </select>
+      </div>
+
+      
+      
+         <!--
+      - FOOTER SECTION
+    -->
+    <footer>
+
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <img src="./assets/images/logo.png" alt="" class="footer-logo">
+          <p class="slogan">Movies & TV Shows, Online cinema,
+            Movie database HTML Template.</p>
+
+
+          <div class="social-link">
+
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+          </div>
+        </div>
+
+
+        <div class="footer-links">
+          <ul>
+
+            <h4 class="link-heading">CineFlix</h4>
+
+            <li class="link-item"><a href="#">About us</a></li>
+            <li class="link-item"><a href="#">My profile</a></li>
+            <li class="link-item"><a href="#">Pricing plans</a></li>
+            <li class="link-item"><a href="#">Contacts</a></li>
+
+          </ul>
+
+          <ul>
+
+            <h4 class="link-heading">Browse</h4>
+
+            <li class="link-item"><a href="#">Live Tv</a></li>
+            <li class="link-item"><a href="#">Live News</a></li>
+            <li class="link-item"><a href="#">Live Sports</a></li>
+            <li class="link-item"><a href="#">Streaming Library</a></li>
+
+          </ul>
+
+          <ul>
+
+            <li class="link-item"><a href="#">TV Shows</a></li>
+            <li class="link-item"><a href="#">Movies</a></li>
+            <li class="link-item"><a href="#">Kids</a></li>
+            <li class="link-item"><a href="#">Collections</a></li>
+
+          </ul>
+
+          <ul>
+
+            <h4 class="link-heading">Help</h4>
+
+            <li class="link-item"><a href="#">Account & Billing</a></li>
+            <li class="link-item"><a href="#">Plans & Pricing</a></li>
+            <li class="link-item"><a href="#">Supported devices</a></li>
+            <li class="link-item"><a href="#">Accessibility</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+
+        <div class="copyright">
+          <p>&copy; copyright 2021 CineFlix</p>
+        </div>
+
+        <div class="wrapper">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms and conditions</a>
+        </div>
+
+      </div>
+
+    </footer>
+		    
+		</body>
+</html>

@@ -1,0 +1,101 @@
+#selection_EP {
+  position: absolute;
+  top: 720px;
+  left: 530px;
+  color: white;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+  cursor: pointer;
+}
+
+#selection_EP:hover {
+  color: #d9d9d9;
+}
+
+#selection_LECTEUR:hover {
+  color: #d9d9d9;
+}
+
+#selection_LECTEUR {
+  position: absolute;
+  top: 720px;
+  left: 700px;
+  color: white;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+  cursor: pointer;
+}
+
+#phrase_grise {
+  color: grey;
+  padding-top: 10px;
+}
+
+
+#PRECEDENT {
+  position: absolute;
+  top: 95px;
+  left: 390px;
+  background: #215182;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid grey;
+  font-size: 16px;
+}
+
+#PRECEDENT:hover {
+  background:#1a426b;
+  cursor: pointer;
+}
+
+#D_episode {
+  position: absolute;
+  top: 95px;
+  left: 570px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid grey;
+}
+
+
+#SUIVANT {
+  position: absolute;
+  top: 95px;
+  left: 787px;
+  background: #215182;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid grey;
+  font-size: 16px;
+}
+
+#SUIVANT:hover {
+  background:#1a426b;
+  cursor: pointer;
+}
+
+
+#Peaky_Blinders {
+  padding-left: 10px;
+  color: grey;
+}
